@@ -1,0 +1,129 @@
+{
+    "team": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "role": "Développeur Web",
+        "bio": "Développeur passionné avec 5 ans d'expérience en JavaScript et React.",
+        "skills": ["JavaScript", "React", "Node.js"],
+        "clientReviews": [
+          {
+            "reviewId": 101,
+            "clientName": "Alice Martin",
+            "rating": 4.5,
+            "comment": "Très professionnel et réactif.",
+            "date": "2023-11-06"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "role": "Designer",
+        "bio": "Designer UX/UI avec un œil pour les détails.",
+        "skills": ["Photoshop", "Illustrator", "Figma"],
+        "clientReviews": [
+          {
+            "reviewId": 102,
+            "clientName": "Bob Lee",
+            "rating": 5,
+            "comment": "Design de qualité exceptionnelle.",
+            "date": "2023-10-30"
+          }
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "projectId": 1,
+        "title": "Site Web E-commerce",
+        "category": "Développement Web",
+        "summary": "Un site de vente en ligne pour les petites entreprises.",
+        "teamMember": "John Doe",
+        "technologies": ["HTML", "CSS", "JavaScript", "React"],
+        "reviews": [
+          {
+            "reviewId": 201,
+            "clientName": "Claire M.",
+            "rating": 4,
+            "comment": "Bonne expérience, site rapide.",
+            "date": "2023-09-10"
+          }
+        ],
+        "popularity": "popular"
+      },
+      {
+        "projectId": 2,
+        "title": "Application Mobile",
+        "category": "Développement Mobile",
+        "summary": "App de suivi des habitudes pour utilisateurs mobiles.",
+        "teamMember": "Jane Smith",
+        "technologies": ["React Native", "Firebase"],
+        "reviews": [
+          {
+            "reviewId": 202,
+            "clientName": "Danielle P.",
+            "rating": 5,
+            "comment": "Fonctionnalités très pratiques.",
+            "date": "2023-08-15"
+          }
+        ],
+        "popularity": "recent"
+      }
+    ],
+    "services": [
+      {
+        "serviceId": 1,
+        "title": "Développement Web",
+        "description": "Création de sites web modernes et réactifs.",
+        "specialty": "Développement Web",
+        "price": 500,
+        "duration": "2 semaines",
+        "teamMember": "John Doe"
+      },
+      {
+        "serviceId": 2,
+        "title": "Conception Graphique",
+        "description": "Design de logo et identité visuelle.",
+        "specialty": "Design",
+        "price": 300,
+        "duration": "1 semaine",
+        "teamMember": "Jane Smith"
+      }
+    ],
+    "testimonials": [
+      {
+        "testimonialId": 301,
+        "clientName": "Maxime Dupont",
+        "message": "Service client impeccable et très réactif.",
+        "date": "2023-10-10"
+      },
+      {
+        "testimonialId": 302,
+        "clientName": "Isabelle Roux",
+        "message": "Expérience très agréable.",
+        "date": "2023-11-01"
+      }
+    ],
+    "availability": [
+      {
+        "memberId": 1,
+        "name": "John Doe",
+        "availability": {
+          "monday": "9am - 5pm",
+          "tuesday": "10am - 4pm",
+          "wednesday": "9am - 5pm"
+        }
+      },
+      {
+        "memberId": 2,
+        "name": "Jane Smith",
+        "availability": {
+          "monday": "11am - 3pm",
+          "tuesday": "10am - 4pm",
+          "thursday": "12pm - 6pm"
+        }
+      }
+    ]
+  }
+  
