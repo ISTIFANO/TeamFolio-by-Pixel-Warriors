@@ -1,11 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM17SYMEb0VMZ6c1tPg9A9/gm8F0ffJ5OKHzYB4" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="w-full bg-blue-100">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <a class="text-teal-600" href="#">
+                    <span class="sr-only">Home</span>
+                    <img src="../assets/OIP-removebg-preview.png" class="h-12" alt="Logo">
+                </a>
+                <nav class="hidden md:flex items-center gap-6 text-sm">
+                    <a class="text-gray-500 transition hover:text-gray-700" href="#">Services</a>
+                    <a class="text-gray-500 transition hover:text-gray-700" href="#">Equipes</a>
+                    <a class="text-gray-500 transition hover:text-gray-700" href="#">Contact Us</a>
+                    <a class="text-gray-500 transition hover:text-gray-700" href="#">Projects</a>
+                </nav>
+                <div class="hidden sm:flex items-center gap-4">
+                    <a class="bg-teal-600 text-white px-5 py-2 rounded-md shadow" href="#">Login</a>
+                </div>
+                <button class="block md:hidden p-2 rounded bg-gray-100 text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="w-full py-32 bg-blue-100 flex flex-col items-center text-center">
+        <h2 class="text-3xl font-semibold">Contact</h2>
+        <p class="text-xl">Home &gt; Contact</p>
+    </section>
+
+       <section class="w-full py-9 flex justify-center text-center">
+        <div class="max-w-xl">
+            <h1 class="text-3xl font-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+            <p class="mt-4 text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga
+                ducimus numquam ea!</p>
+        </div>
+    </section>
+
+    <section class="flex justify-center items-center gap-2 h-auto  bg-gray-100">
+        <div class="max-w-xs mx-auto bg-green-200 rounded-lg shadow-lg text-center overflow-hidden">
+            <div class="bg-green-300 p-4">
+                <h2 class="text-xl font-bold text-gray-800">AAMIR EL AMIRI</h2>
+                <p class="text-gray-600">Developer Full Stack</p>
+            </div>
+
+            <div class="flex justify-center space-x-4 p-4 text-gray-600">
+                <a href="#" class="hover:text-black" aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path
+                            d="M24 4.557a9.837 9.837 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337 3.1a9.864 9.864 0 0 1-3.127 1.195 4.921 4.921 0 0 0-8.379 4.482A13.957 13.957 0 0 1 1.67 3.15a4.92 4.92 0 0 0 1.523 6.574A4.897 4.897 0 0 1 .96 9.3v.062a4.926 4.926 0 0 0 3.946 4.827 4.903 4.903 0 0 1-2.212.084 4.93 4.93 0 0 0 4.6 3.417A9.867 9.867 0 0 1 0 19.54a13.924 13.924 0 0 0 7.548 2.212c9.057 0 14.01-7.514 14.01-14.01 0-.213-.004-.426-.014-.637A10.002 10.002 0 0 0 24 4.557z" />
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-black" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path
+                            d="M19 0H5C2.238 0 0 2.238 0 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5V5c0-2.762-2.238-5-5-5zM7.111 19.65H3.814V8.757h3.297v10.893zm-1.647-12.4c-1.059 0-1.92-.856-1.92-1.91 0-1.055.86-1.912 1.92-1.912s1.919.857 1.919 1.912c0 1.054-.86 1.91-1.92 1.91zM20.35 19.65h-3.293v-5.521c0-1.313-.027-3.006-1.83-3.006-1.83 0-2.11 1.428-2.11 2.903v5.624h-3.297V8.757h3.168v1.493h.043c.44-.83 1.516-1.706 3.123-1.706 3.338 0 3.953 2.195 3.953 5.05v6.056z" />
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-black" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.111.82-.261.82-.579 0-.286-.011-1.04-.017-2.04-3.338.724-4.042-1.614-4.042-1.614-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.839 1.238 1.839 1.238 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.304.761-1.604-2.665-.305-5.466-1.334-5.466-5.93 0-1.31.467-2.381 1.235-3.22-.123-.305-.535-1.528.117-3.184 0 0 1.008-.323 3.3 1.23a11.5 11.5 0 0 1 3.003-.403c1.02.005 2.047.138 3.003.403 2.291-1.554 3.297-1.23 3.297-1.23.653 1.656.242 2.88.12 3.184.77.839 1.232 1.91 1.232 3.22 0 4.61-2.803 5.623-5.474 5.92.429.37.813 1.102.813 2.222 0 1.604-.015 2.898-.015 3.293 0 .32.217.694.825.576C20.565 21.798 24 17.303 24 12c0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+
+            </div>
+            <div class="pt-10">
+                <img src="../assests/team-inner-3.png" alt="Profile" class="w-24 h-24 mx-auto  -mt-12">
+            </div>
+        </div>
+        <div class="max-w-xs mx-auto bg-green-200 rounded-lg shadow-lg text-center overflow-hidden">
+            <div class="bg-green-300 p-4">
+                <h2 class="text-xl font-bold text-gray-800">AAMIR EL AMIRI</h2>
+                <p class="text-gray-600">Developer Full Stack</p>
+            </div>
+
+            <div class="flex justify-center space-x-4 p-4 text-gray-600">
+                <a href="#" class="hover:text-black" aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path
+                            d="M24 4.557a9.837 9.837 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337 3.1a9.864 9.864 0 0 1-3.127 1.195 4.921 4.921 0 0 0-8.379 4.482A13.957 13.957 0 0 1 1.67 3.15a4.92 4.92 0 0 0 1.523 6.574A4.897 4.897 0 0 1 .96 9.3v.062a4.926 4.926 0 0 0 3.946 4.827 4.903 4.903 0 0 1-2.212.084 4.93 4.93 0 0 0 4.6 3.417A9.867 9.867 0 0 1 0 19.54a13.924 13.924 0 0 0 7.548 2.212c9.057 0 14.01-7.514 14.01-14.01 0-.213-.004-.426-.014-.637A10.002 10.002 0 0 0 24 4.557z" />
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-black" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path
+                            d="M19 0H5C2.238 0 0 2.238 0 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5V5c0-2.762-2.238-5-5-5zM7.111 19.65H3.814V8.757h3.297v10.893zm-1.647-12.4c-1.059 0-1.92-.856-1.92-1.91 0-1.055.86-1.912 1.92-1.912s1.919.857 1.919 1.912c0 1.054-.86 1.91-1.92 1.91zM20.35 19.65h-3.293v-5.521c0-1.313-.027-3.006-1.83-3.006-1.83 0-2.11 1.428-2.11 2.903v5.624h-3.297V8.757h3.168v1.493h.043c.44-.83 1.516-1.706 3.123-1.706 3.338 0 3.953 2.195 3.953 5.05v6.056z" />
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-black" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.111.82-.261.82-.579 0-.286-.011-1.04-.017-2.04-3.338.724-4.042-1.614-4.042-1.614-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.839 1.238 1.839 1.238 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.304.761-1.604-2.665-.305-5.466-1.334-5.466-5.93 0-1.31.467-2.381 1.235-3.22-.123-.305-.535-1.528.117-3.184 0 0 1.008-.323 3.3 1.23a11.5 11.5 0 0 1 3.003-.403c1.02.005 2.047.138 3.003.403 2.291-1.554 3.297-1.23 3.297-1.23.653 1.656.242 2.88.12 3.184.77.839 1.232 1.91 1.232 3.22 0 4.61-2.803 5.623-5.474 5.92.429.37.813 1.102.813 2.222 0 1.604-.015 2.898-.015 3.293 0 .32.217.694.825.576C20.565 21.798 24 17.303 24 12c0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+
+            </div>
+            <div class="pt-10">
+                <img src="../assests/team-inner-3.png" alt="Profile" class="w-24 h-24 mx-auto  -mt-12">
+            </div>
+        </div>
+        <div class="max-w-xs mx-auto bg-green-200 rounded-lg shadow-lg text-center overflow-hidden">
+            <div class="bg-green-300 p-4">
+                <h2 class="text-xl font-bold text-gray-800">AAMIR EL AMIRI</h2>
+                <p class="text-gray-600">Developer Full Stack</p>
+            </div>
+
+            <div class="flex justify-center space-x-4 p-4 text-gray-600">
+                <a href="#" class="hover:text-black" aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path
+                            d="M24 4.557a9.837 9.837 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337 3.1a9.864 9.864 0 0 1-3.127 1.195 4.921 4.921 0 0 0-8.379 4.482A13.957 13.957 0 0 1 1.67 3.15a4.92 4.92 0 0 0 1.523 6.574A4.897 4.897 0 0 1 .96 9.3v.062a4.926 4.926 0 0 0 3.946 4.827 4.903 4.903 0 0 1-2.212.084 4.93 4.93 0 0 0 4.6 3.417A9.867 9.867 0 0 1 0 19.54a13.924 13.924 0 0 0 7.548 2.212c9.057 0 14.01-7.514 14.01-14.01 0-.213-.004-.426-.014-.637A10.002 10.002 0 0 0 24 4.557z" />
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-black" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path
+                            d="M19 0H5C2.238 0 0 2.238 0 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5V5c0-2.762-2.238-5-5-5zM7.111 19.65H3.814V8.757h3.297v10.893zm-1.647-12.4c-1.059 0-1.92-.856-1.92-1.91 0-1.055.86-1.912 1.92-1.912s1.919.857 1.919 1.912c0 1.054-.86 1.91-1.92 1.91zM20.35 19.65h-3.293v-5.521c0-1.313-.027-3.006-1.83-3.006-1.83 0-2.11 1.428-2.11 2.903v5.624h-3.297V8.757h3.168v1.493h.043c.44-.83 1.516-1.706 3.123-1.706 3.338 0 3.953 2.195 3.953 5.05v6.056z" />
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-black" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.111.82-.261.82-.579 0-.286-.011-1.04-.017-2.04-3.338.724-4.042-1.614-4.042-1.614-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.839 1.238 1.839 1.238 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.304.761-1.604-2.665-.305-5.466-1.334-5.466-5.93 0-1.31.467-2.381 1.235-3.22-.123-.305-.535-1.528.117-3.184 0 0 1.008-.323 3.3 1.23a11.5 11.5 0 0 1 3.003-.403c1.02.005 2.047.138 3.003.403 2.291-1.554 3.297-1.23 3.297-1.23.653 1.656.242 2.88.12 3.184.77.839 1.232 1.91 1.232 3.22 0 4.61-2.803 5.623-5.474 5.92.429.37.813 1.102.813 2.222 0 1.604-.015 2.898-.015 3.293 0 .32.217.694.825.576C20.565 21.798 24 17.303 24 12c0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+
+            </div>
+            <div class="pt-10">
+                <img src="../assests/team-inner-3.png" alt="Profile" class="w-24 h-24 mx-auto  -mt-12">
+            </div>
+        </div>
+        <div class="max-w-xs mx-auto bg-green-200 rounded-lg shadow-lg text-center overflow-hidden">
+            <div class="bg-green-300 p-4">
+                <h2 class="text-xl font-bold text-gray-800">AAMIR EL AMIRI</h2>
+                <p class="text-gray-600">Developer Full Stack</p>
+            </div>
+
+            <div class="flex justify-center space-x-4 p-4 text-gray-600">
+                <a href="#" class="hover:text-black" aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path
+                            d="M24 4.557a9.837 9.837 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337 3.1a9.864 9.864 0 0 1-3.127 1.195 4.921 4.921 0 0 0-8.379 4.482A13.957 13.957 0 0 1 1.67 3.15a4.92 4.92 0 0 0 1.523 6.574A4.897 4.897 0 0 1 .96 9.3v.062a4.926 4.926 0 0 0 3.946 4.827 4.903 4.903 0 0 1-2.212.084 4.93 4.93 0 0 0 4.6 3.417A9.867 9.867 0 0 1 0 19.54a13.924 13.924 0 0 0 7.548 2.212c9.057 0 14.01-7.514 14.01-14.01 0-.213-.004-.426-.014-.637A10.002 10.002 0 0 0 24 4.557z" />
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-black" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path
+                            d="M19 0H5C2.238 0 0 2.238 0 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5V5c0-2.762-2.238-5-5-5zM7.111 19.65H3.814V8.757h3.297v10.893zm-1.647-12.4c-1.059 0-1.92-.856-1.92-1.91 0-1.055.86-1.912 1.92-1.912s1.919.857 1.919 1.912c0 1.054-.86 1.91-1.92 1.91zM20.35 19.65h-3.293v-5.521c0-1.313-.027-3.006-1.83-3.006-1.83 0-2.11 1.428-2.11 2.903v5.624h-3.297V8.757h3.168v1.493h.043c.44-.83 1.516-1.706 3.123-1.706 3.338 0 3.953 2.195 3.953 5.05v6.056z" />
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-black" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.111.82-.261.82-.579 0-.286-.011-1.04-.017-2.04-3.338.724-4.042-1.614-4.042-1.614-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.839 1.238 1.839 1.238 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.304.761-1.604-2.665-.305-5.466-1.334-5.466-5.93 0-1.31.467-2.381 1.235-3.22-.123-.305-.535-1.528.117-3.184 0 0 1.008-.323 3.3 1.23a11.5 11.5 0 0 1 3.003-.403c1.02.005 2.047.138 3.003.403 2.291-1.554 3.297-1.23 3.297-1.23.653 1.656.242 2.88.12 3.184.77.839 1.232 1.91 1.232 3.22 0 4.61-2.803 5.623-5.474 5.92.429.37.813 1.102.813 2.222 0 1.604-.015 2.898-.015 3.293 0 .32.217.694.825.576C20.565 21.798 24 17.303 24 12c0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+
+            </div>
+            <div class="pt-10">
+                <img src="../assests/team-inner-3.png" alt="Profile" class="w-24 h-24 mx-auto  -mt-12">
+            </div>
+        </div>
+    </section>
+
+ <section class="w-full py-9 flex justify-center text-center">
+    <div class="max-w-xl">
+        <h1 class="text-3xl font-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        <p class="mt-4 text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga
+            ducimus numquam ea!</p>
+    </div>
+</section>
 </body>
+
 </html>
