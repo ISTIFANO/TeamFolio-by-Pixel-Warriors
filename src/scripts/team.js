@@ -8,6 +8,7 @@ async function fetchData() {
         }
         const data = await response.json();
         displayTeam(data.team); 
+        displayRiviews(data.team);
     } catch (error) {
         console.log('fetch API error', error);
     }
@@ -42,11 +43,59 @@ function displayTeam(teamInfo) {
                     </svg>                        </a>
                     </div>
                     <div class="pt-4">
-                        <img src="${member.image || '/default-profile.png'}" alt="Profile" class="w-24 h-24 mx-auto  ">
+                        <img src="${member.image || '../assests/images/aamir-picture.jpg'}" alt="Profile" class="w-24 h-24 mx-auto  ">
                     </div>
                 </div>
             </section>`;
     }).join(""); 
 }
+
+function displayRiviews(teamInfo){
+
+    const reviews = document.getElementById("reviews");
+
+    reviews.innerHTML= teamInfo.map(item => {
+
+        return `<section class="flex items-center justify-center min-h-screen bg-gray-100" >
+    <div class="bg-white shadow-lg rounded-lg p-6 max-w-xs text-center">
+        <!-- Quotation Mark Icon -->
+        <div class="text-orange-500 text-4xl">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8" viewBox="0 0 24 24">
+            <path d="M9 11.4c-.43-2.07.41-4.44 2.31-5.76 1.39-.97 3.05-1.2 4.44-.59 1.39.61 2.48 1.97 2.97 3.47.49 1.5.24 3.06-.68 4.35-1.15 1.64-3.1 2.47-5.04 2.14a4.495 4.495 0 0 1-3.74-3.61c-.06-.36-.14-.71-.26-1.05zM4 11.4c-.43-2.07.41-4.44 2.31-5.76C7.7 4.67 9.36 4.44 10.75 5.05c1.39.61 2.48 1.97 2.97 3.47.49 1.5.24 3.06-.68 4.35C11.89 14.51 9.94 15.34 8 15.01a4.495 4.495 0 0 1-3.74-3.61c-.06-.36-.14-.71-.26-1.05z"/>
+          </svg>
+        </div>
+    
+        <!-- Quote Text -->
+        <p class="text-gray-600 italic mt-4">
+        ${item.clientReviews.comment}
+        </p>
+    
+        <!-- Rating Stars -->
+        <div class="flex justify-center items-center mt-4 space-x-1 text-yellow-500">
+        <p>${item.clientReviews.rating}</p>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+            <path d="M12 17.3l-4.6 2.7 1.2-5.1-4-3.5 5.2-.4 2-4.9 2 4.9 5.2.4-4 3.5 1.2 5.1-4.6-2.7z"/>
+          </svg>
+         
+        </div>
+    
+        <div class="mt-4">
+          <p class="font-semibold">Mr. ${item.name}</p>
+          <p class="text-gray-500">Developer</p>
+        </div>
+    
+        <!-- Profile Image -->
+        <div class="-mt-10 mx-auto w-20 h-20 rounded-full overflow-hidden border-4 border-white">
+          <img src=${item.image} alt="Profile Image" class="w-full h-full object-cover">
+        </div>
+      </div>`
+    }).join(""); 
+}
+
+    
+
+
+
+
 
 fetchData();
