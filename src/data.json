@@ -23,14 +23,16 @@
         "linkedin": "https://linkedin.com/in/KarimAmrani",
         "github": "https://github.com/KarimAmrani"
       }
-    },{
+    },
+    
+    {
       "id": 2,
       "name": "Abdelhakim Baalla",
-      "role": "Développeur Web",
+      "role": "Développeur Full Stack",
       "image": "../assests/images/Abdelhakim-picture.jpg",
 
       "bio": "Développeur passionné avec 5 ans d'expérience en JavaScript et React.",
-      "skills": ["JavaScript", "React", "Node.js"],
+      "skills": ["JavaScript", "React", "Node.js", "Tailwind", "php"],
 
       "clientReviews": [
         {
@@ -43,10 +45,11 @@
       ],
       "socialMedia": {
         "twitter": "https://twitter.com/KarimAmrani",
-        "linkedin": "https://linkedin.com/in/KarimAmrani",
-        "github": "https://github.com/KarimAmrani"
+        "linkedin": "https://www.linkedin.com/in/abdelhakim-baalla-720120253/",
+        "github": "https://github.com/Abdelha98kim"
       }
     },
+
     {
       "id": 2,
       "name": "abdellah addar ",
@@ -94,6 +97,10 @@
       }
     }
   ],
+
+
+
+  
   "projects": [
     {
       "projectId": 1,
@@ -132,6 +139,10 @@
       "popularity": "recent"
     }
   ],
+
+
+
+
   "services": [
     {
       "serviceId": 1,
@@ -152,6 +163,9 @@
       "teamMember": "Fatima Zahra Bensouda"
     }
   ],
+
+
+
   "testimonials": [
     {
       "testimonialId": 301,
@@ -166,6 +180,10 @@
       "date": "2023-11-01"
     }
   ],
+
+
+
+  
   "availability": [
     {
       "memberId": 1,
