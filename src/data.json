@@ -2,9 +2,9 @@
   "team": [
     {
       "id": 1,
-      "name": "Karim Amrani",
+      "name": "Aamir El Amiri",
       "role": "Développeur Web",
-      "image": "../assests/team-inner2.png",
+      "image": "../assests/images/aamir-picture.jpg",
 
       "bio": "Développeur passionné avec 5 ans d'expérience en JavaScript et React.",
       "skills": ["JavaScript", "React", "Node.js"],
@@ -24,10 +24,10 @@
         "github": "https://github.com/KarimAmrani"
       }
     },{
-      "id": 1,
-      "name": "Karim Amrani",
+      "id": 2,
+      "name": "Abdelhakim Baalla",
       "role": "Développeur Web",
-      "image": "../assests/team-inner-3.png",
+      "image": "../assests/images/Abdelhakim-picture.jpg",
 
       "bio": "Développeur passionné avec 5 ans d'expérience en JavaScript et React.",
       "skills": ["JavaScript", "React", "Node.js"],
@@ -49,9 +49,9 @@
     },
     {
       "id": 2,
-      "name": "Fatima Zahra Bensouda",
+      "name": "abdellah addar ",
       "role": "Designer UI/UX",
-      "image": "../assests/team-inner.png",
+      "image": "../assests/images/addar-picture.jpg",
 
       "bio": "Designer avec une approche créative et orientée utilisateur.",
       "skills": ["Photoshop", "Illustrator", "Figma"],
@@ -72,9 +72,9 @@
     },
     {
       "id": 3,
-      "name": "Youssef El Khatib",
+      "name": "ilyass El Khatib",
       "role": "Chef de projet",
-      "image": "../assests/team-inner4.png",
+      "image": "../assests/images/ilyass-picture.jpg",
 
       "bio": "Expert en gestion de projet avec un fort accent sur l'efficacité et la communication.",
       "skills": ["Scrum", "Kanban", "Agile"],
