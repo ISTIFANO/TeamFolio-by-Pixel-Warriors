@@ -90,21 +90,37 @@
               </button>
               <div 
                 id="popupModal" 
-                class="fixed inset-0 z-50 hidden items-center justify-center bg-gray-900 bg-opacity-75"
+                class="fixed  inset-0 z-50 hidden  items-center justify-center bg-gray-900 bg-opacity-75"
               >
-                <div class="bg-white rounded-lg p-6 w-96">
+                <div class="bg-white rounded-lg p-6 w-96  ">
                   <h2 class="text-lg font-semibold text-gray-800 mb-4">Create a Review</h2>
                                     <form>
                     <div class="mb-4">
                       <label class="block text-sm font-medium text-gray-700">Name</label>
-                      <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" required>
+                      <input id="name" type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" required>
                     </div>
                     <div class="mb-4">
+                        <label class="block text-sm font-medium text-gray-700">Rating</label>
+                        <input id="rating" type="number" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" required>
+                      </div>
+                    <div class="mb-4">
                       <label class="block text-sm font-medium text-gray-700">Review</label>
-                      <textarea class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" rows="4" required></textarea>
+                      <textarea id="reviews" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" rows="4" required></textarea>
                     </div>
+                    <label for="img">ajouter image</label>
+                    <input type="file" accept="image/png, image/jpeg" name="file" id="reviewsImg">
+<select class="p-2" name="" id="" >
+    <option id="selector" value="teams">All teams</option>
+    <option id="selector" value="AamirElAmiri">Aamir El Amiri</option>
+    <option id="selector" value="AbdelhakimBaalla">Abdelhakim Baalla</option>
+    <option id="selector" value="AamirElAmiri">abdellahaddar</option>
+    <option id="selector"  value="AamirElAmiri">ilyassElKhatib</option>
+</select>
+
                     <button 
-                      type="submit" 
+                      type="submit"
+                      id="submit" 
+                      onclick="ValidationInput()"
                       class="w-full bg-indigo-600 text-white rounded-md py-2 mt-3 hover:bg-indigo-700 focus:outline-none focus:ring"
                     >
                       Submit Review
