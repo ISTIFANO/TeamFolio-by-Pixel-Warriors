@@ -1,6 +1,7 @@
 body {
   margin: 0%;
   padding: 0%;
+  height: 100%;
 }
 /* FOOTER */
 footer {
@@ -119,4 +120,40 @@ footer p{
       row-gap: 20px;
       align-items: flex-start;
   }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 42px;
+  box-shadow: 0px 4px 20px 0px rgb(255, 163, 3);
+  border: 2px solid rgb(235, 156, 10);
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  margin: 12px auto;
 }
