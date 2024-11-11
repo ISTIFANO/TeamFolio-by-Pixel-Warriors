@@ -20,7 +20,7 @@
             <div class="flex h-16 items-center justify-between">
                 <a class="text-teal-600" href="#">
                     <span class="sr-only">Home</span>
-                    <img src="../assets/OIP-removebg-preview.png" class="h-12" alt="Logo">
+                    <img src="../assests/images/OIP-removebg-preview.png" class="h-12" alt="Logo">
                 </a>
                 <nav class="hidden md:flex items-center gap-6 text-sm">
                     <a class="text-gray-500 transition hover:text-gray-700" href="#">Services</a>
@@ -42,8 +42,8 @@
     </header>
 
     <section class="w-full py-32 bg-blue-100 flex flex-col items-center text-center">
-        <h2 class="text-3xl font-semibold">Contact</h2>
-        <p class="text-xl">Home &gt; Contact</p>
+        <h2 class="text-3xl font-semibold">Team</h2>
+        <p class="text-xl">Home &gt; Team</p>
     </section>
 
        <section class="w-full py-9 flex justify-center text-center">
@@ -67,16 +67,11 @@
 <section class="flex items-center flex-wrap gap-9 justify-center min-h-screen bg-gray-100"  id="reviews" >
 
 </section>
-<script src="../src/scripts/team.js"></script>
-
-
-<section>
-
-    <header class="bg-white">
+   <section class="bg-white">
         <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
           <div class="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
             <div>
-              <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">Blog Posts</h1>
+              <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">Reviews</h1>
       
               <p class="mt-1.5 text-sm text-gray-500">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, recusandae.
@@ -85,22 +80,51 @@
       
             <div class="flex items-center gap-4">
             
-      
-              <button
+                <button 
                 class="inline-block rounded bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring"
                 type="button"
+                id="popupButton"
+                onclick="PopUp()"
               >
                 Create Reviews
               </button>
+              <div 
+                id="popupModal" 
+                class="fixed inset-0 z-50 hidden items-center justify-center bg-gray-900 bg-opacity-75"
+              >
+                <div class="bg-white rounded-lg p-6 w-96">
+                  <h2 class="text-lg font-semibold text-gray-800 mb-4">Create a Review</h2>
+                                    <form>
+                    <div class="mb-4">
+                      <label class="block text-sm font-medium text-gray-700">Name</label>
+                      <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" required>
+                    </div>
+                    <div class="mb-4">
+                      <label class="block text-sm font-medium text-gray-700">Review</label>
+                      <textarea class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" rows="4" required></textarea>
+                    </div>
+                    <button 
+                      type="submit" 
+                      class="w-full bg-indigo-600 text-white rounded-md py-2 mt-3 hover:bg-indigo-700 focus:outline-none focus:ring"
+                    >
+                      Submit Review
+                    </button>
+                  </form>
+            
+                  <button 
+                    class="mt-4 w-full text-center text-sm text-gray-500 hover:text-gray-800"
+                    onclick="PopUp()"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </header>
+      </section>
 
-
-</section>
-
-<footer>
+<footer class="px-9" >
     <div class="footer-firstElement">
         <div class="logo">
             <img src="../assests/images/OIP-removebg-preview.png" alt="">
@@ -144,6 +168,8 @@
         </div>
     </div>
 </footer>
+<script src="../src/scripts/team.js"></script>
+
 </body>
 
 </html>

@@ -84,12 +84,11 @@ function displayRiviews(teamInfo) {
     }).join("");
 }
 
-
+function PopUp() {
+    const modal = document.getElementById('popupModal');
+    modal.classList.toggle('hidden');
+  }
 
     
 
-
-
-
-// 
 fetchData();

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Management</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+<section class="bg-white dark:bg-gray-900">
+  <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16">
+      <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Contact with us</h2>
+      <form id="contactForm">
+          <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
+              <div class="sm:col-span-2">
+                  <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your name</label>
+                  <input type="text" id="name" class="input-field">
+              </div>
+              <div>
+                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                  <input type="text" id="email" class="input-field">
+              </div>
+              <div>
+                  <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Price</label>
+                  <input type="number" id="price" class="input-field">
+              </div>
+              <div>
+                  <label for="personne" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select one personne</label>
+                  <select id="personne" class="input-field">
+                      <option value="">Select one personne</option>
+                      <option value="ilyass">Ilyass</option>
+                      <option value="aamir">Aamir</option>
+                      <option value="abdullah">Abdullah</option>
+                      <option value="abdullhakim">Abdullhakim</option>
+                  </select>
+              </div>
+              <div>
+                  <label for="days" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Numero Of The days</label>
+                  <input type="number" id="days" class="input-field">
+              </div> 
+              <div class="sm:col-span-2">
+                  <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
+                  <textarea id="description" class="input-field" rows="4"></textarea>
+              </div>
+          </div>
+          <button type="button" onclick="addOrUpdateContact()" class="btn-save">Save Entry</button>
+      </form>
+      <div id="contactList" class="mt-8">
+          <h3 class="text-lg font-semibold">Entries</h3>
+          <table id="contactsTable" class="table-auto w-full">
+              <thead>
+                  <tr>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Price</th>
+                      <th>Person</th>
+                      <th>Days</th>
+                      <th>Description</th>
+                      <th>Actions</th>
+                  </tr>
+              </thead>
+              <tbody></tbody>
+          </table>
+      </div>
+  </div>
+</section>
+<div class="review-section container mx-auto p-5">
+  <div class="text-center mb-5">
+    <h2 class="text-2xl font-bold">Reviews</h2>
+    <div class="text-4xl font-bold">4.0</div>
+    <div class="text-yellow-500 text-xl mb-1">★★★★☆</div>
+    <p class="text-gray-600">based on 23 reviews</p>
+
+    <div class="mt-4 space-y-2">
+      <div class="flex items-center">
+        <span class="w-1/4">Excellent</span>
+        <div class="progress w-3/4">
+          <div class="progress-bar bg-success" style="width: 80%"></div>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <span class="w-1/4">Good</span>
+        <div class="progress w-3/4">
+          <div class="progress-bar bg-success" style="width: 60%"></div>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <span class="w-1/4">Average</span>
+        <div class="progress w-3/4">
+          <div class="progress-bar bg-warning" style="width: 40%"></div>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <span class="w-1/4">Below Average</span>
+        <div class="progress w-3/4">
+          <div class="progress-bar bg-orange-500" style="width: 20%"></div>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <span class="w-1/4">Poor</span>
+        <div class="progress w-3/4">
+          <div class="progress-bar bg-danger" style="width: 10%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="reviews space-y-4">
+    <div class="review border-b pb-4">
+      <h3 class="font-semibold text-lg">Joan Perkins</h3>
+      <div class="text-yellow-500 text-sm">★★★★★</div>
+      <span class="text-gray-500 text-sm">1 day ago</span>
+      <p class="text-gray-700 mt-1">This chair is a great addition for any room in your home, not only just the living room...</p>
+    </div>
+    <div class="review border-b pb-4">
+      <h3 class="font-semibold text-lg">Frank Garrett</h3>
+      <div class="text-yellow-500 text-sm">★★★★☆</div>
+      <span class="text-gray-500 text-sm">4 days ago</span>
+      <p class="text-gray-700 mt-1">Suspendisse potenti. Nullam tincidunt lacus tellus, aliquam est vehicula a...</p>
+    </div>
+    <div class="review border-b pb-4">
+      <h3 class="font-semibold text-lg">Randy Palmer</h3>
+      <div class="text-yellow-500 text-sm">★★★★☆</div>
+      <span class="text-gray-500 text-sm">1 month ago</span>
+      <p class="text-gray-700 mt-1">Aenean ante nisi, gravida non mattis semper, varius et...</p>
+    </div>
+  </div>
+  <div class="text-center mt-5">
+    <button class="btn btn-primary">Write a Review</button>
+  </div>
+</div>
+<script>
+  let contacts = JSON.parse(localStorage.getItem("contacts")) || [];
+  let editIndex = null;
+
+  function displayContacts() {
+      const tableBody = document.querySelector("#contactsTable tbody");
+      tableBody.innerHTML = "";
+      contacts.forEach((contact, index) => {
+          tableBody.innerHTML += `
+              <tr>
+                  <td>${contact.name}</td>
+                  <td>${contact.email}</td>
+                  <td>${contact.price}</td>
+                  <td>${contact.personne}</td>
+                  <td>${contact.days}</td>
+                  <td>${contact.description}</td>
+                  <td>
+                      <button onclick="editContact(${index})" class="btn-edit">Modifier</button>
+                      <button onclick="deleteContact(${index})" class="btn-delete">Supprimer</button>
+                  </td>
+              </tr>
+          `;
+      });
+  }
+
+  function addOrUpdateContact() {
+      const newContact = {
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          price: document.getElementById("price").value,
+          personne: document.getElementById("personne").value,
+          days: document.getElementById("days").value,
+          description: document.getElementById("description").value,
+      };
+
+      if (editIndex !== null) {
+          contacts[editIndex] = newContact;
+          editIndex = null;
+      } else {
+          contacts.push(newContact);
+      }
+
+      localStorage.setItem("contacts", JSON.stringify(contacts));
+      displayContacts();
+      document.getElementById("contactForm").reset();
+  }
+
+  function editContact(index) {
+      const contact = contacts[index];
+      document.getElementById("name").value = contact.name;
+      document.getElementById("email").value = contact.email;
+      document.getElementById("price").value = contact.price;
+      document.getElementById("personne").value = contact.personne;
+      document.getElementById("days").value = contact.days;
+      document.getElementById("description").value = contact.description;
+      editIndex = index;
+  }
+
+  function deleteContact(index) {
+      contacts.splice(index, 1);
+      localStorage.setItem("contacts", JSON.stringify(contacts));
+      displayContacts();
+  }
+
+  document.getElementById("contactForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      addOrUpdateContact();
+  });
+
+  displayContacts();
+</script>
+
+<style>
+  .input-field {
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      padding: 0.5em;
+      margin-bottom: 0.5em;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 4px;
+  }
+  .btn-save {
+      background-color: #319795;
+      color: white;
+      padding: 0.5em 1em;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 1em;
+  }
+  .table-auto {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+  }
+  th, td {
+      padding: 0.5em;
+      border: 1px solid #ddd;
+      text-align: left;
+  }
+  .btn-edit {
+      background-color: #4CAF50;
+      color: white;
+      padding: 0.3em 0.7em;
+      margin-right: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+  .btn-delete {
+      background-color: #f44336;
+      color: white;
+      padding: 0.3em 0.7em;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+</style>
+
+</body>
+</html>
