@@ -320,5 +320,20 @@
       "role": "Chef de projet",
       "quote": "'My Code's Work, i don't Have any idea how'"
     }
+  ],
+
+
+  "servicepack":[
+    {
+      "title": "Standard",
+      "prix": 3000,
+      "description": "Idéal pour les entreprises avec des tâches de conception petites mais régulières chaque mois. Parfait pour maintenir un flux de travail de conception cohérent."
+    },
+    {
+      "title": "Pro",
+      "prix": 5500,
+      "description": "Idéal pour les entreprises nécessitant un travail de conception approfondi et un volume de tâches plus élevé."
+    }
   ]
+
 }

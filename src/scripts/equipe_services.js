@@ -226,3 +226,23 @@ function displayServiceilyassheader(info){
     })
      .join( ``);
 }
+
+
+// baalla services pack
+fetch("../src/data.json")
+.then((response) => response.json())
+.then((data) => displayServicebaallapack(data.servicepack));
+
+function displayServicebaallapack(info){
+    const baallaServicepack = document.getElementById("services-pack");
+    baallaServicepack.innerHTML = info.map((item)=>{
+        return `<div class="bg-[#F5E6D4] rounded pt-5 pl-2 pb-5 pr-2 w-full">
+                    <h1 class="font-semibold text-lg">${item.title}</h1>
+                    <h2 class="text-sm pb-5">${item.prix}MAD/MOIS</h2>
+                    <p class="text-sm font-light pb-3">${item.description}</p>
+                    <button class="bg-[#FFD6A2] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light">Souscrire</button>
+                </div>`
+    
+    })
+     .join( ``);
+}
