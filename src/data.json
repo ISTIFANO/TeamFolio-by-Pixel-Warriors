@@ -1,6 +1,7 @@
 {
   "team": [
     {
+      "quote": "' wake(); eat(); code(); repeat();'",
       "id": 1,
       "name": "Aamir El Amiri",
       "role": "Développeur Web",
@@ -27,6 +28,7 @@
     },
     
     {
+      "quote": "'Je suis Un résolveur des problèmes, avec du code'",
       "id": 2,
       "name": "Abdelhakim Baalla",
       "role": "Développeur Full Stack",
@@ -53,6 +55,7 @@
     },
 
     {
+      "quote": "'Hello World!'",
       "id": 3,
       "name": "abdellah addar ",
       "role": "Designer UI/UX",
@@ -77,6 +80,7 @@
       }
     },
     {
+      "quote": "'My Code's Work, i don't Have any idea how'",
       "id": 4,
       "name": "ilyass Elassal",
       "role": "Chef de projet",
@@ -276,5 +280,60 @@
       "description": "Je vais conventir tous votre design a une complete site web.",
       "categorie": "complete site web"
     }
+  ],
+
+
+  "baallaservicehead": [
+    {
+      "image": "../assests/images/Abdelhakim-picture.jpg",
+      "name": "Abdelhakim Baalla",
+      "role": "Développeur Full Stack",
+      "quote": "'Je suis Un résolveur des problèmes, avec du code'"
+    }
+  ],
+
+
+  "addarservicehead": [
+    {
+      "image": "../assests/images/addar-picture.jpg",
+      "name": "abdellah addar ",
+      "role": "Designer UI/UX",
+      "quote": "'Hello World!'"
+    }
+  ],
+
+
+  "aamirservicehead": [
+    {
+      "image": "../assests/images/aamir-picture.jpg",
+      "name": "Aamir El Amiri",
+      "role": "Développeur Web",
+      "quote": "'wake(); eat(); code(); repeat();'"
+    }
+  ],
+
+
+  "ilyassservicehead": [
+    {
+      "image": "../assests/images/ilyass-picture.jpg",
+      "name": "ilyass Elassal",
+      "role": "Chef de projet",
+      "quote": "'My Code's Work, i don't Have any idea how'"
+    }
+  ],
+
+
+  "servicepack":[
+    {
+      "title": "Standard",
+      "prix": 3000,
+      "description": "Idéal pour les entreprises avec des tâches de conception petites mais régulières chaque mois. Parfait pour maintenir un flux de travail de conception cohérent."
+    },
+    {
+      "title": "Pro",
+      "prix": 5500,
+      "description": "Idéal pour les entreprises nécessitant un travail de conception approfondi et un volume de tâches plus élevé."
+    }
   ]
+
 }

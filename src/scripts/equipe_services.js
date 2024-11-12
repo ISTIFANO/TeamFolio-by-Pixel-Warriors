@@ -116,3 +116,133 @@ function displayServiceilyass(info){
     })
      .join( ``);
 }
+
+
+
+// baalla services header
+fetch("../src/data.json")
+.then((response) => response.json())
+.then((data) => displayServiceBaallaheader(data.baallaservicehead));
+
+function displayServiceBaallaheader(info){
+    const baallaServiceheader = document.getElementById("baalla-services-header");
+    baallaServiceheader.innerHTML = info.map((item)=>{
+        return `<div class="shadow-md max-w-72 rounded-tr-3xl rounded-tl-3xl rounded-bl-3xl bg-[#F8E4D4]">
+                    <figure>
+                        <img src="${item.image}" alt="${item.name}" width="150" class="rounded-t-3xl">
+                    </figure>
+                    <h1 class="font-semibold pt-1 ml-1">${item.name}</h1>
+                    <small class="text-xs font-light block ml-1">${item.role}</small>
+                    <button class="bg-[#FFD6A2] pt-1 pb-1 pl-3 pr-3 font-light text-xs rounded-lg mt-5 mb-2 ml-1">Contacter</button>
+                </div>`
+    
+    })
+
+    const baallaServicequote = document.getElementById("baalla-services-quote");
+    baallaServicequote.innerHTML = info.map((item)=>{
+        return `<p class="font-semibold text-3xl ">${item.quote}</p>`
+    })
+     .join( ``);
+}
+
+
+
+// addar services header
+fetch("../src/data.json")
+.then((response) => response.json())
+.then((data) => displayServiceaddarheader(data.addarservicehead));
+
+function displayServiceaddarheader(info){
+    const addarServiceheader = document.getElementById("addar-services-header");
+    addarServiceheader.innerHTML = info.map((item)=>{
+        return `<div class="shadow-md max-w-72 rounded-tr-3xl rounded-tl-3xl rounded-bl-3xl bg-[#F8E4D4]">
+                    <figure>
+                        <img src="${item.image}" alt="${item.name}" width="150" class="rounded-t-3xl">
+                    </figure>
+                    <h1 class="font-semibold pt-1 ml-1">${item.name}</h1>
+                    <small class="text-xs font-light block ml-1">${item.role}</small>
+                    <button class="bg-[#FFD6A2] pt-1 pb-1 pl-3 pr-3 font-light text-xs rounded-lg mt-5 mb-2 ml-1">Contacter</button>
+                </div>`
+    
+    })
+
+    const addarServicequote = document.getElementById("addar-services-quote");
+    addarServicequote.innerHTML = info.map((item)=>{
+        return `<p class="font-semibold text-3xl ">${item.quote}</p>`
+    })
+     .join( ``);
+}
+
+
+// aamir services header
+fetch("../src/data.json")
+.then((response) => response.json())
+.then((data) => displayServiceaamirheader(data.aamirservicehead));
+
+function displayServiceaamirheader(info){
+    const aamirServiceheader = document.getElementById("aamir-services-header");
+    aamirServiceheader.innerHTML = info.map((item)=>{
+        return `<div class="shadow-md max-w-72 rounded-tr-3xl rounded-tl-3xl rounded-bl-3xl bg-[#F8E4D4]">
+                    <figure>
+                        <img src="${item.image}" alt="${item.name}" width="150" class="rounded-t-3xl">
+                    </figure>
+                    <h1 class="font-semibold pt-1 ml-1">${item.name}</h1>
+                    <small class="text-xs font-light block ml-1">${item.role}</small>
+                    <button class="bg-[#FFD6A2] pt-1 pb-1 pl-3 pr-3 font-light text-xs rounded-lg mt-5 mb-2 ml-1">Contacter</button>
+                </div>`
+    
+    })
+
+    const aamirServicequote = document.getElementById("aamir-services-quote");
+    aamirServicequote.innerHTML = info.map((item)=>{
+        return `<p class="font-semibold text-3xl ">${item.quote}</p>`
+    })
+     .join( ``);
+}
+
+
+// ilyass services header
+fetch("../src/data.json")
+.then((response) => response.json())
+.then((data) => displayServiceilyassheader(data.ilyassservicehead));
+
+function displayServiceilyassheader(info){
+    const ilyassServiceheader = document.getElementById("ilyass-services-header");
+    ilyassServiceheader.innerHTML = info.map((item)=>{
+        return `<div class="shadow-md max-w-72 rounded-tr-3xl rounded-tl-3xl rounded-bl-3xl bg-[#F8E4D4]">
+                    <figure>
+                        <img src="${item.image}" alt="${item.name}" width="150" class="rounded-t-3xl">
+                    </figure>
+                    <h1 class="font-semibold pt-1 ml-1">${item.name}</h1>
+                    <small class="text-xs font-light block ml-1">${item.role}</small>
+                    <button class="bg-[#FFD6A2] pt-1 pb-1 pl-3 pr-3 font-light text-xs rounded-lg mt-5 mb-2 ml-1">Contacter</button>
+                </div>`
+    
+    })
+
+    const ilyassServicequote = document.getElementById("ilyass-services-quote");
+    ilyassServicequote.innerHTML = info.map((item)=>{
+        return `<p class="font-semibold text-3xl ">${item.quote}</p>`
+    })
+     .join( ``);
+}
+
+
+// baalla services pack
+fetch("../src/data.json")
+.then((response) => response.json())
+.then((data) => displayServicebaallapack(data.servicepack));
+
+function displayServicebaallapack(info){
+    const baallaServicepack = document.getElementById("services-pack");
+    baallaServicepack.innerHTML = info.map((item)=>{
+        return `<div class="bg-[#F5E6D4] rounded pt-5 pl-2 pb-5 pr-2 w-full">
+                    <h1 class="font-semibold text-lg">${item.title}</h1>
+                    <h2 class="text-sm pb-5">${item.prix}MAD/MOIS</h2>
+                    <p class="text-sm font-light pb-3">${item.description}</p>
+                    <button class="bg-[#FFD6A2] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light">Souscrire</button>
+                </div>`
+    
+    })
+     .join( ``);
+}
