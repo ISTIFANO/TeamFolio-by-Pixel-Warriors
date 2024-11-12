@@ -46,7 +46,7 @@
         <p class="text-xl">Home &gt; Team</p>
     </section>
 
-       <section class="w-full py-9 flex justify-center text-center">
+    <section class="w-full py-9 flex justify-center text-center">
         <div class="max-w-xl">
             <h1 class="text-3xl font-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
             <p class="mt-4 text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga
@@ -56,137 +56,137 @@
 
     <section class="w-full flex flex-wrap gap-8 justify-center sm:justify-between p-4" id="teamContainer">
     </section>
-    
- <section class="w-full py-9 flex justify-center text-center">
-    <div class="max-w-xl">
-        <h1 class="text-3xl font-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
-        <p class="mt-4 text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga
-            ducimus numquam ea!</p>
-    </div>
-</section>
-<section class="flex items-center flex-wrap gap-9 justify-center min-h-screen bg-gray-100"  id="reviews" >
 
-</section>
+    <section class="w-full py-9 flex justify-center text-center">
+        <div class="max-w-xl">
+            <h1 class="text-3xl font-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+            <p class="mt-4 text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga
+                ducimus numquam ea!</p>
+        </div>
+    </section>
+    <section class="flex items-center flex-wrap gap-9  justify-center min-h-screen bg-gray-100" id="reviews">
+
+    </section>
+
+    <section class="w-screen h-[344px] flex flex-row " id="reviewsFromPopUp">
 
 
-   <section class="bg-white">
+    </section>
+    <section class="bg-white">
         <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-          <div class="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
-            <div>
-              <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">Reviews</h1>
-      
-              <p class="mt-1.5 text-sm text-gray-500">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, recusandae.
-              </p>
-            </div>
-      
-            <div class="flex items-center gap-4">
-            
-                <button 
-                class="inline-block rounded bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring"
-                type="button"
-                id="popupButton"
-                onclick="PopUp()"
-              >
-                Create Reviews
-              </button>
-              <div 
-                id="popupModal" 
-                class="fixed  inset-0 z-50 hidden  items-center justify-center bg-gray-900 bg-opacity-75"
-              >
-                <div class="bg-white rounded-lg p-6 w-96  ">
-                  <h2 class="text-lg font-semibold text-gray-800 mb-4">Create a Review</h2>
-                                    <form>
-                    <div class="mb-4">
-                      <label class="block text-sm font-medium text-gray-700">Name</label>
-                      <input id="name" type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" required>
-                    </div>
-                    <div class="mb-4">
-                        <label class="block text-sm font-medium text-gray-700">Rating</label>
-                        <input id="rating" type="number" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" required>
-                      </div>
-                    <div class="mb-4">
-                      <label class="block text-sm font-medium text-gray-700">Review</label>
-                      <textarea id="reviews" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" rows="4" required></textarea>
-                    </div>
-                    <label for="img">ajouter image</label>
-                    <input type="file" accept="image/png, image/jpeg" name="file" id="reviewsImg">
-<select class="p-2" name="" id="" >
-    <option id="selector" value="teams">All teams</option>
-    <option id="selector" value="AamirElAmiri">Aamir El Amiri</option>
-    <option id="selector" value="AbdelhakimBaalla">Abdelhakim Baalla</option>
-    <option id="selector" value="AamirElAmiri">abdellahaddar</option>
-    <option id="selector"  value="AamirElAmiri">ilyassElKhatib</option>
-</select>
+            <div class="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
+                <div>
+                    <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">Reviews</h1>
 
-                    <button 
-                      type="submit"
-                      id="submit" 
-                      onclick="ValidationInput()"
-                      class="w-full bg-indigo-600 text-white rounded-md py-2 mt-3 hover:bg-indigo-700 focus:outline-none focus:ring"
-                    >
-                      Submit Review
-                    </button>
-                  </form>
-            
-                  <button 
-                    class="mt-4 w-full text-center text-sm text-gray-500 hover:text-gray-800"
-                    onclick="PopUp()"
-                  >
-                    Close
-                  </button>
+                    <p class="mt-1.5 text-sm text-gray-500">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, recusandae.
+                    </p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-<footer class="px-9" >
-    <div class="footer-firstElement">
-        <div class="logo">
-            <img src="../assests/images/OIP-removebg-preview.png" alt="">
-            <h2>TeamFolio</h2>
-        </div>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Service</a></li>
-            <li><a style="padding-right: 0px;" href="">Contact</a></li>
-        </ul>
-    </div>
-    <hr>
-    <div class="footer-secondElement">
-        <div class="secondElement">
-            <div class="office footer-item">
-                <h5>OFFICE</h5>
-                <p>Germany <br>—329 Queensberry Street, <br>North Melbourne VIC 3051</p>
-            </div>
-            <div class="need-help footer-item">
-                <h5>NEED HELP</h5>
-                <p>+1 670 936 46 70<br>hello@voiture.com</p>
-            </div>
-            <div class="opening-hours footer-item">
-                <h5>OPENING HOURS</h5>
-                <p>Monday - Friday: 09:00AM - 09:00PM <br>Saturday: 09:00AM - 07:00PM <br>Sunday: Closed</p>
-            </div>
-            <div class="keep-in-touch footer-item">
-                <h5>KEEP IN TOUCH</h5>
-                <input type="email" placeholder="Enter your Email" id="email" name="email">
-                <p>Get latest updates and offers.</p>
+                <div class="flex items-center gap-4">
+
+                    <button
+                        class="inline-block rounded bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring"
+                        type="button" id="popupButton" onclick="PopUp()">
+                        Create Reviews
+                    </button>
+
+
+                   
             </div>
         </div>
-        <div class="thirdElement">
-            <p>ib-themes © 2023. All Rights Reserved.</p>
-            <div class="footer-thirdElement-icons">
-                <img class="footer-thirdElement-icon" src="../assests/images/image_41-removebg-preview.png" alt="">
-                <img class="footer-thirdElement-icon" src="../assests/images/image_44-removebg-preview.png" alt="">
-                <img class="footer-thirdElement-icon" src="../assests/images/image_62-removebg-preview.png" alt="">
+    </section>
+ <div id="popupModal"
+                        class="fixed  inset-0 z-50 hidden  items-center justify-center bg-gray-900 bg-opacity-75">
+                        <div class="bg-white rounded-lg p-6 w-96  ">
+                            <h2 class="text-lg font-semibold text-gray-800 mb-4">Create a Review</h2>
+                            <form>
+                                <div class="mb-4">
+                                    <label class="block text-sm font-medium text-gray-700">Name</label>
+                                    <input id="name" type="text"
+                                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                        required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-sm font-medium text-gray-700">Rating</label>
+                                    <input id="rating" type="number"
+                                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                        required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-sm font-medium text-gray-700">Review</label>
+                                    <textarea id="reviews"
+                                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                        rows="4" required></textarea>
+                                </div>
+                                <label for="img">ajouter image</label>
+                                <input type="file" accept="image/png, image/jpeg" name="file" id="reviewsImg">
+                                <select class="p-2" name="" id="">
+                                    <option id="selector" value="teams">All teams</option>
+                                    <option id="selector" value="AamirElAmiri">Aamir El Amiri</option>
+                                    <option id="selector" value="AbdelhakimBaalla">Abdelhakim Baalla</option>
+                                    <option id="selector" value="AamirElAmiri">abdellahaddar</option>
+                                    <option id="selector" value="AamirElAmiri">ilyassElKhatib</option>
+                                </select>
+
+                                <button type="submit" id="submit" onclick="ValidationInput()"
+                                    class="w-full bg-indigo-600 text-white rounded-md py-2 mt-3 hover:bg-indigo-700 focus:outline-none focus:ring">
+                                    Submit Review
+                                </button>
+                            </form>
+
+                            <button class="mt-4 w-full text-center text-sm text-gray-500 hover:text-gray-800"
+                                onclick="PopUp()">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    <footer class="px-9">
+        <div class="footer-firstElement">
+            <div class="logo">
+                <img src="../assests/images/OIP-removebg-preview.png" alt="">
+                <h2>TeamFolio</h2>
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a style="padding-right: 0px;" href="">Contact</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="footer-secondElement">
+            <div class="secondElement">
+                <div class="office footer-item">
+                    <h5>OFFICE</h5>
+                    <p>Germany <br>—329 Queensberry Street, <br>North Melbourne VIC 3051</p>
+                </div>
+                <div class="need-help footer-item">
+                    <h5>NEED HELP</h5>
+                    <p>+1 670 936 46 70<br>hello@voiture.com</p>
+                </div>
+                <div class="opening-hours footer-item">
+                    <h5>OPENING HOURS</h5>
+                    <p>Monday - Friday: 09:00AM - 09:00PM <br>Saturday: 09:00AM - 07:00PM <br>Sunday: Closed</p>
+                </div>
+                <div class="keep-in-touch footer-item">
+                    <h5>KEEP IN TOUCH</h5>
+                    <input type="email" placeholder="Enter your Email" id="email" name="email">
+                    <p>Get latest updates and offers.</p>
+                </div>
+            </div>
+            <div class="thirdElement">
+                <p>ib-themes © 2023. All Rights Reserved.</p>
+                <div class="footer-thirdElement-icons">
+                    <img class="footer-thirdElement-icon" src="../assests/images/image_41-removebg-preview.png" alt="">
+                    <img class="footer-thirdElement-icon" src="../assests/images/image_44-removebg-preview.png" alt="">
+                    <img class="footer-thirdElement-icon" src="../assests/images/image_62-removebg-preview.png" alt="">
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-<script src="../src/scripts/team.js"></script>
+    </footer>
+    <script src="../src/scripts/team.js"></script>
 
 </body>
 
