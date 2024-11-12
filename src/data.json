@@ -80,14 +80,9 @@
       }
     },
     {
-<<<<<<< HEAD
-      "id": 3,
-      "name": "ilyass El Khatib",
-=======
       "quote": "'My Code's Work, i don't Have any idea how'",
       "id": 4,
       "name": "ilyass Elassal",
->>>>>>> 08691bfac23e91baceebdcb0a2596bdc260c6e72
       "role": "Chef de projet",
       "image": "../assests/images/ilyass-picture.jpg",
       "imagepng": "../assests/images/ilyass-picture.png",
