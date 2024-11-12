@@ -48,7 +48,7 @@
         }
       ],
       "socialMedia": {
-        "twitter": "https://x.com/Abdelhakim99891",
+        "twitter": "https://twitter.com/KarimAmrani",
         "linkedin": "https://www.linkedin.com/in/abdelhakim-baalla-720120253/",
         "github": "https://github.com/Abdelha98kim"
       }
@@ -80,9 +80,14 @@
       }
     },
     {
+<<<<<<< HEAD
+      "id": 3,
+      "name": "ilyass El Khatib",
+=======
       "quote": "'My Code's Work, i don't Have any idea how'",
       "id": 4,
       "name": "ilyass Elassal",
+>>>>>>> 08691bfac23e91baceebdcb0a2596bdc260c6e72
       "role": "Chef de projet",
       "image": "../assests/images/ilyass-picture.jpg",
       "imagepng": "../assests/images/ilyass-picture.png",
@@ -148,6 +153,24 @@
       "clientName": "Isabelle Roux",
       "message": "Expérience très agréable.",
       "date": "2023-11-01"
+    },
+    {
+      "testimonialId": 303,
+      "clientName": "Maxime Dupont",
+      "message": "Service client impeccable et très réactif.",
+      "date": "2023-10-10"
+    },
+    {
+      "testimonialId": 304,
+      "clientName": "Maxime Dupont",
+      "message": "Service client impeccable et très réactif.",
+      "date": "2023-10-10"
+    },
+    {
+      "testimonialId": 305,
+      "clientName": "Maxime Dupont",
+      "message": "Service client impeccable et très réactif.",
+      "date": "2023-10-10"
     }
   ],
 
