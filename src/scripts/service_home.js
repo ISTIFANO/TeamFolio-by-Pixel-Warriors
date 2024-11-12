@@ -1,3 +1,4 @@
+// fetch and display data for services team
 fetch("../src/data.json")
   .then((response) => response.json())
   .then((data) => displayServiceFaison(data.servicesFaison));
@@ -16,6 +17,7 @@ function displayServiceFaison(info){
     .join( ``);
 }
 
+// fetch and display data for team member
 fetch("../src/data.json")
   .then((response) => response.json())
   .then((data) => displaynotreTeam(data.team));
