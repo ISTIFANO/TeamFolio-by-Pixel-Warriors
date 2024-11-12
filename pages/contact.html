@@ -1,28 +1,23 @@
-<!DOCTYPE html>
+<!DOCTYPE html>                                      
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <title>Responsive Card</title>
+    <title>contact</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM17SYMEb0VMZ6c1tPg9A9/gm8F0ffJ5OKHzYB4" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-
-
 <body class="bg-gray-100">
     <header class="w-full bg-blue-100">
         <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-16 items-center justify-between">
                 <a class="text-teal-600" href="#">
                     <span class="sr-only">Home</span>
-                    <img src="../assets/OIP-removebg-preview.png" class="h-12" alt="Logo">
+                    <img src="../assets/images/OIP-removebg-preview.png" class="h-12" alt="Logo">
                 </a>
                 <nav class="hidden md:flex items-center gap-6 text-sm">
                     <a class="text-gray-500 transition hover:text-gray-700" href="#">Services</a>
@@ -219,37 +214,121 @@
                 </div>
                 <button type="button" onclick="addOrUpdateContact()" class="btn-save">Save Entry</button>
             </form>
-    
             <div id="contactList" class="mt-8">
                 <h3 class="text-lg font-semibold">Entries</h3>
+                <table id="contactsTable" class="table-auto w-full">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Price</th>
+                            <th>Person</th>
+                            <th>Days</th>
+                            <th>Description</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
             </div>
         </div>
-    </section>
-    <div class="affichage" style="display: grid; align-content: center;">
-    <script>
+      </section>
+      <div class="review-section container mx-auto p-5">
+        <div class="text-center mb-5">
+          <h2 class="text-2xl font-bold">Reviews</h2>
+          <div class="text-4xl font-bold">4.0</div>
+          <div class="text-yellow-500 text-xl mb-1">★★★★☆</div>
+          <p class="text-gray-600">based on 23 reviews</p>
+      
+          <div class="mt-4 space-y-2">
+            <div class="flex items-center">
+              <span class="w-1/4">Excellent</span>
+              <div class="progress w-3/4">
+                <div class="progress-bar bg-success" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <span class="w-1/4">Good</span>
+              <div class="progress w-3/4">
+                <div class="progress-bar bg-success" style="width: 60%"></div>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <span class="w-1/4">Average</span>
+              <div class="progress w-3/4">
+                <div class="progress-bar bg-warning" style="width: 40%"></div>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <span class="w-1/4">Below Average</span>
+              <div class="progress w-3/4">
+                <div class="progress-bar bg-orange-500" style="width: 20%"></div>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <span class="w-1/4">Poor</span>
+              <div class="progress w-3/4">
+                <div class="progress-bar bg-danger" style="width: 10%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section id="temoignagesSection" class="mt-8">
+            <h2 class="text-xl font-bold">Témoignages</h2>
+        </section>
+        <section id="horairesSection" class="mt-8">
+            <h2 class="text-xl font-bold">Horaires de Disponibilité des Membres</h2>
+        </section>
+        
+        <div class="reviews space-y-4">
+          <div class="review border-b pb-4">
+            <h3 class="font-semibold text-lg">Joan Perkins</h3>
+            <div class="text-yellow-500 text-sm">★★★★★</div>
+            <span class="text-gray-500 text-sm">1 day ago</span>
+            <p class="text-gray-700 mt-1">This chair is a great addition for any room in your home, not only just the living room...</p>
+          </div>
+          <div class="review border-b pb-4">
+            <h3 class="font-semibold text-lg">Frank Garrett</h3>
+            <div class="text-yellow-500 text-sm">★★★★☆</div>
+            <span class="text-gray-500 text-sm">4 days ago</span>
+            <p class="text-gray-700 mt-1">Suspendisse potenti. Nullam tincidunt lacus tellus, aliquam est vehicula a...</p>
+          </div>
+          <div class="review border-b pb-4">
+            <h3 class="font-semibold text-lg">Randy Palmer</h3>
+            <div class="text-yellow-500 text-sm">★★★★☆</div>
+            <span class="text-gray-500 text-sm">1 month ago</span>
+            <p class="text-gray-700 mt-1">Aenean ante nisi, gravida non mattis semper, varius et...</p>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <button class="btn btn-primary">Write a Review</button>
+        </div>
+      </div>
+      <script>
         let contacts = JSON.parse(localStorage.getItem("contacts")) || [];
         let editIndex = null;
-    
+      
         function displayContacts() {
-            const contactSection = document.getElementById("contactList");
-            contactSection.innerHTML = "";
+            const tableBody = document.querySelector("#contactsTable tbody");
+            tableBody.innerHTML = "";
             contacts.forEach((contact, index) => {
-                contactSection.innerHTML += `
-                    <div>
-                        <p><strong>Name:</strong> ${contact.name}</p>
-                        <p><strong>Email:</strong> ${contact.email}</p>
-                        <p><strong>Price:</strong> ${contact.price}</p>
-                        <p><strong>Person:</strong> ${contact.personne}</p>
-                        <p><strong>Days:</strong> ${contact.days}</p>
-                        <p><strong>Description:</strong> ${contact.description}</p>
-                        <button onclick="editContact(${index})">Edit</button>
-                        <button onclick="deleteContact(${index})">Delete</button>
-                    </div>
-                    <hr>
+                tableBody.innerHTML += `
+                    <tr>
+                        <td>${contact.name}</td>
+                        <td>${contact.email}</td>
+                        <td>${contact.price}</td>
+                        <td>${contact.personne}</td>
+                        <td>${contact.days}</td>
+                        <td>${contact.description}</td>
+                        <td>
+                            <button onclick="editContact(${index})" class="btn-edit">Modifier</button>
+                            <button onclick="deleteContact(${index})" class="btn-delete">Supprimer</button>
+                        </td>
+                    </tr>
                 `;
             });
         }
-    
+      
         function addOrUpdateContact() {
             const newContact = {
                 name: document.getElementById("name").value,
@@ -259,19 +338,19 @@
                 days: document.getElementById("days").value,
                 description: document.getElementById("description").value,
             };
-    
+      
             if (editIndex !== null) {
                 contacts[editIndex] = newContact;
                 editIndex = null;
             } else {
                 contacts.push(newContact);
             }
-            
+      
             localStorage.setItem("contacts", JSON.stringify(contacts));
             displayContacts();
             document.getElementById("contactForm").reset();
         }
-    
+      
         function editContact(index) {
             const contact = contacts[index];
             document.getElementById("name").value = contact.name;
@@ -282,22 +361,102 @@
             document.getElementById("description").value = contact.description;
             editIndex = index;
         }
-    
+      
         function deleteContact(index) {
             contacts.splice(index, 1);
             localStorage.setItem("contacts", JSON.stringify(contacts));
             displayContacts();
         }
-    
+      
         document.getElementById("contactForm").addEventListener("submit", (e) => {
             e.preventDefault();
             addOrUpdateContact();
         });
-    
+    function validateForm() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const personne = document.getElementById("personne").value;
+
+        if (name.trim() === "" || email.trim() === "" || personne === "") {
+            alert("Veuillez remplir tous les champs obligatoires.");
+            return false;
+        }
+        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+        if (!email.match(emailPattern)) {
+            alert("Veuillez entrer une adresse email valide.");
+            return false;
+        }
+
+        return true;
+    }
+
+    document.getElementById("contactForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (validateForm()) {
+            addOrUpdateContact();
+        }
+    });
+    async function chargerTemoignages() {
+        const response = await fetch('temoignages.xml');
+        const xmlData = await response.text();
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlData, "application/xml");
+
+        const temoignages = xmlDoc.getElementsByTagName('temoignage');
+        let output = '';
+
+        Array.from(temoignages).forEach((temoignage) => {
+            const auteur = temoignage.getElementsByTagName('auteur')[0].textContent;
+            const date = temoignage.getElementsByTagName('date')[0].textContent;
+            const contenu = temoignage.getElementsByTagName('contenu')[0].textContent;
+
+            output += `
+                <div class="temoignage">
+                    <h4>${auteur}</h4>
+                    <p>${date}</p>
+                    <p>${contenu}</p>
+                </div>
+            `;
+        });
+
+        document.getElementById('temoignagesSection').innerHTML = output;
+    }
+    window.onload = () => {
         displayContacts();
-    </script>
-    </div>
-    <style>
+        chargerTemoignages();
+        chargerHoraires();
+    };
+    async function chargerHoraires() {
+        const response = await fetch('horaires.xml');
+        const xmlData = await response.text();
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlData, "application/xml");
+
+        const membres = xmlDoc.getElementsByTagName('membre');
+        let horairesOutput = '';
+
+        Array.from(membres).forEach((membre) => {
+            const nom = membre.getElementsByTagName('nom')[0].textContent;
+            const disponibilite = membre.getElementsByTagName('disponibilite')[0].textContent;
+
+            horairesOutput += `
+                <div class="horaire">
+                    <h4>${nom}</h4>
+                    <p>${disponibilite}</p>
+                </div>
+            `;
+        });
+
+        document.getElementById('horairesSection').innerHTML = horairesOutput;
+    }
+
+
+
+      
+        displayContacts();
+      </script>
+      
+      <style>
         .input-field {
             background-color: #f0f0f0;
             border: 1px solid #ccc;
@@ -314,9 +473,37 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            margin-top: 1em;
         }
-    </style>
-    
-</body>
-
-</html>
+        .table-auto {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+        th, td {
+            padding: 0.5em;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .btn-edit {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.3em 0.7em;
+            margin-right: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn-delete {
+            background-color: #f44336;
+            color: white;
+            padding: 0.3em 0.7em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+      </style>
+      
+      </body>
+      </html>
+      
