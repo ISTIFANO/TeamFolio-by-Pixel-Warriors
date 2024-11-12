@@ -203,5 +203,35 @@
         "thursday": "12pm - 6pm"
       }
     }
+  ],
+
+  
+  "servicesFaison": [
+    {
+      "cardNumber" : 1,
+      "title": "UX/UI Design",
+      "caption": "Concevoir des expérience du monde réel",
+      "description": "Nous créons des designs accessibles pour sites web, applications web, plateformes e-commerce, et chatbots."
+    },
+
+    {
+      "cardNumber" : 2,
+      "title": "Back-end devlopment",
+      "caption": "Créez et maintenez les composants côté serveur de vos application web",
+      "description": "Nous incluons les API côté serveur, les opérations de base de données, etc."
+    },
+    {
+      "cardNumber" : 3,
+      "title": "Front-end devlopment",
+      "caption": "Transformer Votre design au Code magic!",
+      "description": "Nous incluons Tout les composant neccesaire pour cree une page fluid et responsive."
+    },
+
+    {
+      "cardNumber" : 4,
+      "title": "Gestion des Projects",
+      "caption": "Gerer Votre project par une methode Agile",
+      "description": "Nous Utilison Le framework ou le cadre de gestion de project Agile (SCRUM), pour aider les équipes à structurer leur travail et à le gérer."
+    }
   ]
 }
