@@ -51,7 +51,7 @@ function displaynotreTeam(team){
 
             </div>
             <div class="pt-10">
-                <img src="${item.image}" alt="Profile" class="w-24 h-24 mx-auto -mt-10 rounded-full">
+                <img src="${item.imagepng}" alt="Profile" class="w-24 h-24 mx-auto -mt-10 ">
             </div>
         </div>`
 

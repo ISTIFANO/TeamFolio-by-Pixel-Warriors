@@ -5,6 +5,7 @@
       "name": "Aamir El Amiri",
       "role": "Développeur Web",
       "image": "../assests/images/aamir-picture.jpg",
+      "imagepng": "../assests/images/aamir-picture.png",
 
       "bio": "Développeur passionné avec 5 ans d'expérience en JavaScript et React.",
       "skills": ["JavaScript", "React", "Node.js"],
@@ -30,6 +31,7 @@
       "name": "Abdelhakim Baalla",
       "role": "Développeur Full Stack",
       "image": "../assests/images/Abdelhakim-picture.jpg",
+      "imagepng": "../assests/images/Abdelhakim-picture.png",
 
       "bio": "Développeur passionné avec 5 ans d'expérience en JavaScript et React.",
       "skills": ["JavaScript", "React", "Node.js", "Tailwind", "php"],
@@ -51,10 +53,11 @@
     },
 
     {
-      "id": 2,
+      "id": 3,
       "name": "abdellah addar ",
       "role": "Designer UI/UX",
       "image": "../assests/images/addar-picture.jpg",
+      "imagepng": "../assests/images/addar-picture.png",
 
       "bio": "Designer avec une approche créative et orientée utilisateur.",
       "skills": ["Photoshop", "Illustrator", "Figma"],
@@ -74,10 +77,11 @@
       }
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "ilyass Elassal",
       "role": "Chef de projet",
       "image": "../assests/images/ilyass-picture.jpg",
+      "imagepng": "../assests/images/ilyass-picture.png",
 
       "bio": "Expert en gestion de projet avec un fort accent sur l'efficacité et la communication.",
       "skills": ["Scrum", "Kanban", "Agile"],
