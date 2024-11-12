@@ -1,3 +1,4 @@
+// fetch and display data for services team
 fetch("../src/data.json")
   .then((response) => response.json())
   .then((data) => displayServiceFaison(data.servicesFaison));
@@ -16,6 +17,7 @@ function displayServiceFaison(info){
     .join( ``);
 }
 
+// fetch and display data for team member
 fetch("../src/data.json")
   .then((response) => response.json())
   .then((data) => displaynotreTeam(data.team));
@@ -51,7 +53,7 @@ function displaynotreTeam(team){
 
             </div>
             <div class="pt-10">
-                <img src="${item.image}" alt="Profile" class="w-24 h-24 mx-auto -mt-10 rounded-full">
+                <img src="${item.imagepng}" alt="Profile" class="w-24 h-24 mx-auto -mt-10 ">
             </div>
         </div>`
 
