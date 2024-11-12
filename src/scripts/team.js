@@ -6,6 +6,7 @@ async function fetchData() {
       throw new Error("Network response was not ok " + response.statusText);
     }
     const data = await response.json();
+        console.log(data);
     displayTeam(data.team);
     displayRiviews(data.team);
   } catch (error) {
@@ -102,21 +103,34 @@ function PopUp() {
   const modal = document.getElementById("popupModal");
   modal.classList.toggle("hidden");
 }
-const ReviewsArr = [
-  {
-    name: "abdellah",
-    reviews: "Billing is done on a monthly basis based on your usage.",
-    Rating: 4.5,
-    imgReviews: "../assets/images/css.png",
-  },
-  {
-    name: "abde9ader",
-    reviews: "dsq is done on a monthly basis based on your usage.",
-    Rating: 4.5,
-    imgReviews: "../assets/images/facebook.png",
-  },
-];
+// const ReviewsArr = [
+//   {
+//     name: "abdellah",
+//     reviews: "Billing is done on a monthly basis based on your usage.",
+//     Rating: 4.5,
+//     imgReviews: "../assets/images/css.png",
+//   },
+//   {
+//     name: "abde9ader",
+//     reviews: "dsq is done on a monthly basis based on your usage.",
+//     Rating: 4.5,
+//     imgReviews: "../assets/images/facebook.png",
+//   },
+// ];
 
+
+function AddReviews(){
+    const name = document.getElementById("name");
+    const rating = document.getElementById("rating");
+    const reviews = document.getElementById("reviews");
+    const reviewsImg = document.getElementById("reviewsImg");
+
+
+
+
+
+}
+AddReviews();
 function ValidationInput() {
     const name = document.getElementById("name");
     const rating = document.getElementById("rating");
