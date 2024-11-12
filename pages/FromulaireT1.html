@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .progress {
+            height: 20px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+<div class="container mx-auto p-5">
+    <div class="text-center mb-5">
+        <h2 class="text-2xl font-bold">Reviews</h2>
+        <div class="text-4xl font-bold">4.0</div>
+        <div class="text-yellow-500 text-xl mb-1">★★★★☆</div>
+        <p class="text-gray-600">based on 23 reviews</p>
+
+        <div class="mt-4 space-y-2">
+            <div class="flex items-center">
+                <span class="w-1/4">Excellent</span>
+                <div class="progress w-3/4">
+                    <div class="progress-bar bg-success" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <span class="w-1/4">Good</span>
+                <div class="progress w-3/4">
+                    <div class="progress-bar bg-success" style="width: 60%"></div>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <span class="w-1/4">Average</span>
+                <div class="progress w-3/4">
+                    <div class="progress-bar bg-warning" style="width: 40%"></div>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <span class="w-1/4">Below Average</span>
+                <div class="progress w-3/4">
+                    <div class="progress-bar bg-orange-500" style="width: 20%"></div>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <span class="w-1/4">Poor</span>
+                <div class="progress w-3/4">
+                    <div class="progress-bar bg-danger" style="width: 10%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="temoignagesSection" class="mt-8">
+        <h2 class="text-xl font-bold">Témoignages</h2>
+    </section>
+    <section id="horairesSection" class="mt-8">
+        <h2 class="text-xl font-bold">Horaires de Disponibilité des Membres</h2>
+    </section>
+
+    <div class="reviews space-y-4" id="reviewsList">
+    </div>
+
+    <h3 class="mt-5 text-center">Add Your Review</h3>
+    <form id="reviewForm" class="mt-3">
+        <div class="form-group">
+            <label for="reviewerName">Your Name</label>
+            <input type="text" class="form-control" id="reviewerName" required>
+        </div>
+        <div class="form-group">
+            <label for="reviewRating">Rating</label>
+            <select class="form-control" id="reviewRating" required>
+                <option value="">Select Rating</option>
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★☆</option>
+                <option value="3">★★★☆☆</option>
+                <option value="2">★★☆☆☆</option>
+                <option value="1">★☆☆☆☆</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="reviewText">Your Review</label>
+            <textarea class="form-control" id="reviewText" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Review</button>
+    </form>
+    <div id="confirmationMessage" class="mt-4 text-center text-success" style="display: none;"></div>
+</div>
+
+<script>
+    document.getElementById
