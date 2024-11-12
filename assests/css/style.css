@@ -152,6 +152,13 @@ footer p{
 
 .swiper-slide img {
   display: block;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  margin: 12px auto;
+}
+.swiper-slide img.image {
+  display: block;
   width: 88px;
   height: 88px;
   object-fit: cover;

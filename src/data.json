@@ -97,49 +97,35 @@
       }
     }
   ],
+ 
 
-
-
-  
   "projects": [
     {
-      "projectId": 1,
-      "title": "Site Web E-commerce",
-      "category": "Développement Web",
-      "summary": "Un site de vente en ligne pour les petites entreprises.",
-      "teamMember": "Karim Amrani",
-      "technologies": ["HTML", "CSS", "JavaScript", "React"],
-      "reviews": [
-        {
-          "reviewId": 201,
-          "clientName": "Claire M.",
-          "rating": 4,
-          "comment": "Bonne expérience, site rapide.",
-          "date": "2023-09-10"
-        }
-      ],
-      "popularity": "popular"
+      "image": "../assests/images/project1.jpg",
+      "title": "Site web responsive"
     },
     {
-      "projectId": 2,
-      "title": "Application Mobile",
-      "category": "Développement Mobile",
-      "summary": "App de suivi des habitudes pour utilisateurs mobiles.",
-      "teamMember": "Fatima Zahra Bensouda",
-      "technologies": ["React Native", "Firebase"],
-      "reviews": [
-        {
-          "reviewId": 202,
-          "clientName": "Danielle P.",
-          "rating": 5,
-          "comment": "Fonctionnalités très pratiques.",
-          "date": "2023-08-15"
-        }
-      ],
-      "popularity": "recent"
+      "image": "../assests/images/banque.jpg",
+      "title": "Application d'une banque"
+    },
+    {
+      "image": "../assests/images/booking.jpg",
+      "title": "Application de booking"
+    },
+    {
+      "image": "../assests/images/fit.jpg",
+      "title": "Application de fitness"
+    },
+    {
+      "image": "../assests/images/Translate.jpg",
+      "title": "Application de traduction"
+    },
+    {
+      "image": "../assests/images/elearning.jpg",
+      "title": "Platforme E-learning"
     }
-  ],
 
+  ],
 
 
 
@@ -205,7 +191,6 @@
     }
   ],
 
-  
   "servicesFaison": [
     {
       "cardNumber" : 1,
