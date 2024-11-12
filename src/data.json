@@ -102,8 +102,6 @@
     }
   ],
 
-
-
   
   "projects": [
     {
@@ -145,31 +143,6 @@
   ],
 
 
-
-
-  "services": [
-    {
-      "serviceId": 1,
-      "title": "Développement Web",
-      "description": "Création de sites web modernes et réactifs.",
-      "specialty": "Développement Web",
-      "price": 500,
-      "duration": "2 semaines",
-      "teamMember": "Karim Amrani"
-    },
-    {
-      "serviceId": 2,
-      "title": "Conception Graphique",
-      "description": "Design de logo et identité visuelle.",
-      "specialty": "Design",
-      "price": 300,
-      "duration": "1 semaine",
-      "teamMember": "Fatima Zahra Bensouda"
-    }
-  ],
-
-
-
   "testimonials": [
     {
       "testimonialId": 301,
@@ -184,8 +157,6 @@
       "date": "2023-11-01"
     }
   ],
-
-
 
   
   "availability": [
@@ -236,6 +207,86 @@
       "title": "Gestion des Projects",
       "caption": "Gerer Votre project par une methode Agile",
       "description": "Nous Utilison Le framework ou le cadre de gestion de project Agile (SCRUM), pour aider les équipes à structurer leur travail et à le gérer."
+    }
+  ],
+
+
+  "baallaServices": [
+    {
+      "serviceId": 1,
+      "image": "../assests/images/AutoStyle.jpg",
+      "title": "Design Cars Company Website",
+      "prix": 100,
+      "description": "Je vais conventir tous votre sontiment a une belle design.",
+      "categorie": "Design De site Web"
+    },
+    {
+      "serviceId": 2,
+      "image": "../assests/images/lessonssite.jpg",
+      "title": "Complete Lessons site Web",
+      "prix": 100,
+      "description": "Je vais conventir tous votre design a une complete site web.",
+      "categorie": "complete site web"
+    }
+  ],
+
+
+  "addarServices": [
+    {
+      "serviceId": 1,
+      "image": "../assests/images/soltek.png",
+      "title": "Technologie Website (soltek)",
+      "prix": 100,
+      "description": "Je vais conventir tous votre sontiment a une belle design.",
+      "categorie": "Design De site Web"
+    },
+    {
+      "serviceId": 2,
+      "image": "../assests/images/healthy.png",
+      "title": "Healthy Organic Food Site Web",
+      "prix": 200,
+      "description": "Je vais conventir tous votre design a une complete site web.",
+      "categorie": "complete site web"
+    }
+  ],
+
+
+  "aamirServices": [
+    {
+      "serviceId": 1,
+      "image": "../assests/images/template.png",
+      "title": "Free Templates Site Web",
+      "prix": 350,
+      "description": "Je vais conventir tous votre sontiment a une belle design.",
+      "categorie": "Design De site Web"
+    },
+    {
+      "serviceId": 2,
+      "image": "../assests/images/dashboard.png",
+      "title": "Complete Admin Dashboard site Web",
+      "prix": 780,
+      "description": "Je vais conventir tous votre design a une complete site web.",
+      "categorie": "complete site web"
+    }
+  ],
+
+
+  "ilyassServices": [
+    {
+      "serviceId": 1,
+      "image": "../assests/images/portfolio.png",
+      "title": "Portfolio Template design",
+      "prix": 340,
+      "description": "Je vais conventir tous votre sontiment a une belle design.",
+      "categorie": "Design De site Web"
+    },
+    {
+      "serviceId": 2,
+      "image": "../assests/images/huvy.png",
+      "title": "High Performance Web Application Builder",
+      "prix": 1850,
+      "description": "Je vais conventir tous votre design a une complete site web.",
+      "categorie": "complete site web"
     }
   ]
 }
