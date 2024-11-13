@@ -1,6 +1,7 @@
 {
   "team": [
     {
+      "linkpg":"../pages/aamir_service.html",
       "quote": "' wake(); eat(); code(); repeat();'",
       "id": 1,
       "name": "Aamir El Amiri",
@@ -28,6 +29,7 @@
     },
     
     {
+      "linkpg":"../pages/baalla_service.html",
       "quote": "'Je suis Un résolveur des problèmes, avec du code'",
       "id": 2,
       "name": "Abdelhakim Baalla",
@@ -55,6 +57,7 @@
     },
 
     {
+      "linkpg":"../pages/addar_service.html",
       "quote": "'Hello World!'",
       "id": 3,
       "name": "abdellah addar ",
@@ -80,6 +83,7 @@
       }
     },
     {
+      "linkpg":"../pages/ilyass_service.html",
       "quote": "'My Code's Work, i don't Have any idea how'",
       "id": 4,
       "name": "ilyass Elassal",

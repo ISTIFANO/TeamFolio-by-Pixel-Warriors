@@ -246,3 +246,165 @@ function displayServicebaallapack(info){
     })
      .join( ``);
 }
+
+
+let toggle = document.getElementById("toggle-modal-btn");
+toggle.addEventListener("click", function(){
+   var crud = document.getElementById("crud-modal");
+   crud.style = "display:block;"; 
+});
+
+let ajouterService = document.getElementById("ajouter-serv");
+ajouterService.addEventListener("click", function(){
+    const image_ser = document.getElementById("image-ser").files[0];
+    let imageUrl = '';
+    if (image_ser) {
+        imageUrl = URL.createObjectURL(image_ser);
+    }
+    const title = document.getElementById("name").value;
+    const prix = document.getElementById("price").value;
+    const description = document.getElementById("description").value;
+    const categorie = document.getElementById("category").value;
+    const blkdiv = document.getElementById("baalla-services");
+    blkdiv.insertAdjacentHTML("beforeend", `<div class="border-2 border-black w-72">
+                    <figure>
+                        <img src="${imageUrl}" alt="Service Image">
+                    </figure>
+                    <h1 class="font-semibold pt-3 pl-1 text-2xl">${title}</h1>
+                    <p class="pl-1 text-xl">${prix}$</p>
+                    <h2 class="text-sm pl-1 font-medium">Description</h2>
+                    <small class="text-xs font-light pl-1">${description}</small>
+                    <div class="flex justify-around mt-5 mb-5">
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
+                        <div class="flex gap-1 items-center">
+                            <p class="text-[10px] font-medium">Categorie: </p>
+                            <p class="text-[10px]">${categorie}</p>
+                        </div>
+                    </div>
+                </div>`
+        )
+        
+        document.getElementById("name").value = " "
+        document.getElementById("price").value = " "
+        document.getElementById("description").value = " "
+        document.getElementById("category").value = "Selectioner la categorie"
+
+});
+
+let ajouterService2 = document.getElementById("ajouter-serv");
+ajouterService2.addEventListener("click", function(){
+    const image_ser = document.getElementById("image-ser").files[0];
+    let imageUrl = '';
+    if (image_ser) {
+        imageUrl = URL.createObjectURL(image_ser);
+    }
+    const title = document.getElementById("name").value;
+    const prix = document.getElementById("price").value;
+    const description = document.getElementById("description").value;
+    const categorie = document.getElementById("category").value;
+    const blkdiv = document.getElementById("addar-services");
+    blkdiv.insertAdjacentHTML("beforeend", `<div class="border-2 border-black w-72">
+                    <figure>
+                        <img src="${imageUrl}" alt="Service Image">
+                    </figure>
+                    <h1 class="font-semibold pt-3 pl-1 text-2xl">${title}</h1>
+                    <p class="pl-1 text-xl">${prix}$</p>
+                    <h2 class="text-sm pl-1 font-medium">Description</h2>
+                    <small class="text-xs font-light pl-1">${description}</small>
+                    <div class="flex justify-around mt-5 mb-5">
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
+                        <div class="flex gap-1 items-center">
+                            <p class="text-[10px] font-medium">Categorie: </p>
+                            <p class="text-[10px]">${categorie}</p>
+                        </div>
+                    </div>
+                </div>`
+        )
+        
+        document.getElementById("name").value = " "
+        document.getElementById("price").value = " "
+        document.getElementById("description").value = " "
+        document.getElementById("category").value = "Selectioner la categorie"
+
+});
+
+let ajouterService3 = document.getElementById("ajouter-serv");
+ajouterService3.addEventListener("click", function(){
+    const image_ser = document.getElementById("image-ser").files[0];
+    let imageUrl = '';
+    if (image_ser) {
+        imageUrl = URL.createObjectURL(image_ser);
+    }
+    const title = document.getElementById("name").value;
+    const prix = document.getElementById("price").value;
+    const description = document.getElementById("description").value;
+    const categorie = document.getElementById("category").value;
+    const blkdiv = document.getElementById("aamir-services");
+    blkdiv.insertAdjacentHTML("beforeend", `<div class="border-2 border-black w-72">
+                    <figure>
+                        <img src="${imageUrl}" alt="Service Image">
+                    </figure>
+                    <h1 class="font-semibold pt-3 pl-1 text-2xl">${title}</h1>
+                    <p class="pl-1 text-xl">${prix}$</p>
+                    <h2 class="text-sm pl-1 font-medium">Description</h2>
+                    <small class="text-xs font-light pl-1">${description}</small>
+                    <div class="flex justify-around mt-5 mb-5">
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
+                        <div class="flex gap-1 items-center">
+                            <p class="text-[10px] font-medium">Categorie: </p>
+                            <p class="text-[10px]">${categorie}</p>
+                        </div>
+                    </div>
+                </div>`
+        )
+        
+        document.getElementById("name").value = " "
+        document.getElementById("price").value = " "
+        document.getElementById("description").value = " "
+        document.getElementById("category").value = "Selectioner la categorie"
+
+});
+
+let ajouterService4 = document.getElementById("ajouter-serv");
+ajouterService4.addEventListener("click", function(){
+    const image_ser = document.getElementById("image-ser").files[0];
+    let imageUrl = '';
+    if (image_ser) {
+        imageUrl = URL.createObjectURL(image_ser);
+    }
+    const title = document.getElementById("name").value;
+    const prix = document.getElementById("price").value;
+    const description = document.getElementById("description").value;
+    const categorie = document.getElementById("category").value;
+    const blkdiv = document.getElementById("ilyass-services");
+    blkdiv.insertAdjacentHTML("beforeend", `<div class="border-2 border-black w-72">
+                    <figure>
+                        <img src="${imageUrl}" alt="Service Image">
+                    </figure>
+                    <h1 class="font-semibold pt-3 pl-1 text-2xl">${title}</h1>
+                    <p class="pl-1 text-xl">${prix}$</p>
+                    <h2 class="text-sm pl-1 font-medium">Description</h2>
+                    <small class="text-xs font-light pl-1">${description}</small>
+                    <div class="flex justify-around mt-5 mb-5">
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
+                        <div class="flex gap-1 items-center">
+                            <p class="text-[10px] font-medium">Categorie: </p>
+                            <p class="text-[10px]">${categorie}</p>
+                        </div>
+                    </div>
+                </div>`
+        )
+        
+        document.getElementById("name").value = " "
+        document.getElementById("price").value = " "
+        document.getElementById("description").value = " "
+        document.getElementById("category").value = "Selectioner la categorie"
+
+});
+
+
+let closeBtn = document.getElementById("cancel-btn");
+closeBtn.addEventListener("click", function(){
+    const crud_modal = document.getElementById("crud-modal");
+    crud_modal.style = "display: hidden";
+});

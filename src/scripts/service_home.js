@@ -25,12 +25,13 @@ fetch("../src/data.json")
 function displaynotreTeam(team){
     const notreteam = document.getElementById("notre-team");
     notreteam.innerHTML = team.map((item)=>{
-        return `<div class="max-w-xs mx-auto bg-[#E8D3BE] rounded-lg shadow-lg text-center overflow-hidden">
-            <div class="bg-[#FFC57A] p-4">
+        return `<div class="max-w-xs mx-auto bg-[#E8D3BE] rounded-lg shadow-lg text-center overflow-hidden ">
+            <div class="bg-[#FFC57A] p-4 ">
                 <h2 class="text-xl font-bold text-gray-800 ">${item.name}</h2>
                 <p class="text-gray-600">${item.role}</p>
+                <a href="${item.linkpg}"><button class="bg-[#FFC53A] py-1 px-5 rounded-lg mt-5">Acceder aux Services</button></a>
             </div>
-
+            
             <div class="flex justify-center space-x-4 p-4 text-gray-600">
                 <a href="${item.socialMedia.twitter}" class="hover:text-black" aria-label="Twitter" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
