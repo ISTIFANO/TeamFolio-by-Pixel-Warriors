@@ -48,15 +48,19 @@ const themeBtn = document.getElementById("")
 
     fetch("../src/data.json")
       .then((response) => response.json())
-      .then((data) => displayProjects(data.projects));
+      .then((data) => displayViews(data.testimonials));
     
-    function displayProjects(info){
-        const allProject = document.getElementById("pro");
-        allProject.innerHTML = info.map((item)=>{
-            return `<div class="border-orange-400 shadow-[#5dadec3b] shadow-xl mx-auto p-5 md:p-0 border rounded-2xl md:w-[450px] md:h-96 pd swiper-slide">
-                <img src=${item.image} alt="" class="p-5 border rounded-lg w-full transition-all duration-300 cursor-pointer hover:scale-105">
-                <p class="left-3 bg-orange-300 border rounded-lg text-center">${item.title}</p>
-               </div>`
+    function displayViews(info){
+        const allViews = document.getElementById("views");
+        allViews.innerHTML = info.map((item)=>{
+            return `<div class="px-3 py-8 swiper-slide">
+                <img src=${item.image} alt="" class="image">
+                <p class="my-5 px-2 text-center text-sm fa-align-center">
+                    ${item.message}
+                </p>
+                <h5 class="mb-2">${item.clientName}</h5>
+                <p class="px-2 text-sm">${item.date}</p>
+              </div>`
     
         })
         .join( ``);

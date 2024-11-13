@@ -145,31 +145,36 @@
       "testimonialId": 301,
       "clientName": "Maxime Dupont",
       "message": "Service client impeccable et très réactif.",
-      "date": "2023-10-10"
+      "date": "2023-10-10",
+      "image":"../assests/images/personne.jpg"
     },
     {
       "testimonialId": 302,
       "clientName": "Isabelle Roux",
       "message": "Expérience très agréable.",
-      "date": "2023-11-01"
+      "date": "2023-11-01",
+      "image": "../assests/images/personne.jpg"
     },
     {
       "testimonialId": 303,
       "clientName": "Maxime Dupont",
       "message": "Service client impeccable et très réactif.",
-      "date": "2023-10-10"
+      "date": "2023-10-10",
+      "image":"../assests/images/personne.jpg"
     },
     {
       "testimonialId": 304,
       "clientName": "Maxime Dupont",
       "message": "Service client impeccable et très réactif.",
-      "date": "2023-10-10"
+      "date": "2023-10-10",
+      "image":"../assests/images/personne.jpg"
     },
     {
       "testimonialId": 305,
       "clientName": "Maxime Dupont",
       "message": "Service client impeccable et très réactif.",
-      "date": "2023-10-10"
+      "date": "2023-10-10",
+      "image":"../assests/images/personne.jpg"
     }
   ],
 
