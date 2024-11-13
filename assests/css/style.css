@@ -164,3 +164,8 @@ footer p{
   object-fit: cover;
   margin: 12px auto;
 }
+
+.indicator{
+  transition: left 0.4s;
+
+}
