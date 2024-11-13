@@ -14,13 +14,14 @@ function displayServiceBaalla(info){
                     <p class="pl-1 text-xl">${item.prix} $</p>
                     <h2 class="text-sm pl-1 font-medium">Description</h2>
                     <small class="text-xs font-light pl-1"> ${item.description}</small>
-                    <div class="flex justify-around mt-5 mb-5">
+                    <div class="ml-1 mt-2">
                         <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <div class="flex gap-1 items-center">
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light">Modifier</button>
+                        </div>
+                        <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
                             <p class="text-[10px]">${item.categorie}</p>
                         </div>
-                    </div>
                 </div>`
     
     })
@@ -44,13 +45,14 @@ function displayServiceAddar(info){
                     <p class="pl-1 text-xl">${item.prix} $</p>
                     <h2 class="text-sm pl-1 font-medium">Description</h2>
                     <small class="text-xs font-light pl-1"> ${item.description}</small>
-                    <div class="flex justify-around mt-5 mb-5">
+                    <div class="ml-1 mt-2">
                         <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <div class="flex gap-1 items-center">
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light">Modifier</button>
+                        </div>
+                        <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
                             <p class="text-[10px]">${item.categorie}</p>
                         </div>
-                    </div>
                 </div>`
     
     })
@@ -74,13 +76,14 @@ function displayServiceaamir(info){
                     <p class="pl-1 text-xl">${item.prix} $</p>
                     <h2 class="text-sm pl-1 font-medium">Description</h2>
                     <small class="text-xs font-light pl-1"> ${item.description}</small>
-                    <div class="flex justify-around mt-5 mb-5">
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 ml-1 rounded text-xs font-light">Demander</button>
-                        <div class="flex gap-1 items-center">
+                    <div class="ml-1 mt-2">
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light">Modifier</button>
+                        </div>
+                        <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
                             <p class="text-[10px]">${item.categorie}</p>
                         </div>
-                    </div>
                 </div>`
     
     })
@@ -104,13 +107,14 @@ function displayServiceilyass(info){
                     <p class="pl-1 text-xl">${item.prix} $</p>
                     <h2 class="text-sm pl-1 font-medium">Description</h2>
                     <small class="text-xs font-light pl-1"> ${item.description}</small>
-                    <div class="flex justify-around mt-5 mb-5">
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 ml-1 rounded text-xs font-light">Demander</button>
-                        <div class="flex gap-1 items-center">
+                    <div class="ml-1 mt-2">
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light">Modifier</button>
+                        </div>
+                        <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
                             <p class="text-[10px]">${item.categorie}</p>
                         </div>
-                    </div>
                 </div>`
     
     })
@@ -254,6 +258,9 @@ toggle.addEventListener("click", function(){
    crud.style = "display:block;"; 
 });
 
+var cont = 3;
+var cint = 0;
+// baalla ajoute service
 let ajouterService = document.getElementById("ajouter-serv");
 ajouterService.addEventListener("click", function(){
     const image_ser = document.getElementById("image-ser").files[0];
@@ -266,7 +273,7 @@ ajouterService.addEventListener("click", function(){
     const description = document.getElementById("description").value;
     const categorie = document.getElementById("category").value;
     const blkdiv = document.getElementById("baalla-services");
-    blkdiv.insertAdjacentHTML("beforeend", `<div class="border-2 border-black w-72">
+    blkdiv.insertAdjacentHTML("beforeend", `<div class="border-2 border-black w-72" id="${cont - 1}">
                     <figure>
                         <img src="${imageUrl}" alt="Service Image">
                     </figure>
@@ -274,13 +281,14 @@ ajouterService.addEventListener("click", function(){
                     <p class="pl-1 text-xl">${prix}$</p>
                     <h2 class="text-sm pl-1 font-medium">Description</h2>
                     <small class="text-xs font-light pl-1">${description}</small>
-                    <div class="flex justify-around mt-5 mb-5">
+                    <div class="ml-1 mt-2">
                         <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <div class="flex gap-1 items-center">
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" id="${cont}">Modifier</button>
+                        </div>
+                        <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
                             <p class="text-[10px]">${categorie}</p>
                         </div>
-                    </div>
                 </div>`
         )
         
@@ -288,9 +296,11 @@ ajouterService.addEventListener("click", function(){
         document.getElementById("price").value = " "
         document.getElementById("description").value = " "
         document.getElementById("category").value = "Selectioner la categorie"
-
+        
+        cont = cont +1;
 });
 
+// addar ajoute serv
 let ajouterService2 = document.getElementById("ajouter-serv");
 ajouterService2.addEventListener("click", function(){
     const image_ser = document.getElementById("image-ser").files[0];
@@ -311,13 +321,14 @@ ajouterService2.addEventListener("click", function(){
                     <p class="pl-1 text-xl">${prix}$</p>
                     <h2 class="text-sm pl-1 font-medium">Description</h2>
                     <small class="text-xs font-light pl-1">${description}</small>
-                    <div class="flex justify-around mt-5 mb-5">
+                    <div class="ml-1 mt-2">
                         <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <div class="flex gap-1 items-center">
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light">Modifier</button>
+                        </div>
+                        <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
                             <p class="text-[10px]">${categorie}</p>
                         </div>
-                    </div>
                 </div>`
         )
         
@@ -328,6 +339,8 @@ ajouterService2.addEventListener("click", function(){
 
 });
 
+
+// aamir ajoute serv
 let ajouterService3 = document.getElementById("ajouter-serv");
 ajouterService3.addEventListener("click", function(){
     const image_ser = document.getElementById("image-ser").files[0];
@@ -348,13 +361,14 @@ ajouterService3.addEventListener("click", function(){
                     <p class="pl-1 text-xl">${prix}$</p>
                     <h2 class="text-sm pl-1 font-medium">Description</h2>
                     <small class="text-xs font-light pl-1">${description}</small>
-                    <div class="flex justify-around mt-5 mb-5">
+                    <div class="ml-1 mt-2">
                         <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <div class="flex gap-1 items-center">
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light">Modifier</button>
+                        </div>
+                        <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
                             <p class="text-[10px]">${categorie}</p>
                         </div>
-                    </div>
                 </div>`
         )
         
@@ -365,6 +379,7 @@ ajouterService3.addEventListener("click", function(){
 
 });
 
+// ilyass ajoute serv
 let ajouterService4 = document.getElementById("ajouter-serv");
 ajouterService4.addEventListener("click", function(){
     const image_ser = document.getElementById("image-ser").files[0];
@@ -385,13 +400,14 @@ ajouterService4.addEventListener("click", function(){
                     <p class="pl-1 text-xl">${prix}$</p>
                     <h2 class="text-sm pl-1 font-medium">Description</h2>
                     <small class="text-xs font-light pl-1">${description}</small>
-                    <div class="flex justify-around mt-5 mb-5">
+                    <div class="ml-1 mt-2">
                         <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <div class="flex gap-1 items-center">
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light">Modifier</button>
+                        </div>
+                        <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
                             <p class="text-[10px]">${categorie}</p>
                         </div>
-                    </div>
                 </div>`
         )
         
