@@ -142,32 +142,30 @@
 
   "testimonials": [
     {
-      "testimonialId": 301,
-      "clientName": "Maxime Dupont",
-      "message": "Service client impeccable et très réactif.",
-      "date": "2023-10-10"
-    },
-    {
       "testimonialId": 302,
       "clientName": "Isabelle Roux",
+      "Rating" : 2,
       "message": "Expérience très agréable.",
       "date": "2023-11-01"
     },
     {
       "testimonialId": 303,
       "clientName": "Maxime Dupont",
+      "Rating" : 7,
       "message": "Service client impeccable et très réactif.",
       "date": "2023-10-10"
     },
     {
       "testimonialId": 304,
       "clientName": "Maxime Dupont",
+      "Rating" : 9,
       "message": "Service client impeccable et très réactif.",
       "date": "2023-10-10"
     },
     {
       "testimonialId": 305,
       "clientName": "Maxime Dupont",
+      "Rating" : 3,
       "message": "Service client impeccable et très réactif.",
       "date": "2023-10-10"
     }
