@@ -16,7 +16,8 @@ function displayServiceBaalla(info){
                     <small class="text-xs font-light pl-1"> ${item.description}</small>
                     <div class="ml-1 mt-2">
                         <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light">Modifier</button>
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
                         </div>
                         <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
@@ -47,7 +48,8 @@ function displayServiceAddar(info){
                     <small class="text-xs font-light pl-1"> ${item.description}</small>
                     <div class="ml-1 mt-2">
                         <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light">Modifier</button>
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
                         </div>
                         <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
@@ -78,7 +80,8 @@ function displayServiceaamir(info){
                     <small class="text-xs font-light pl-1"> ${item.description}</small>
                     <div class="ml-1 mt-2">
                         <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light">Modifier</button>
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
                         </div>
                         <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
@@ -109,7 +112,8 @@ function displayServiceilyass(info){
                     <small class="text-xs font-light pl-1"> ${item.description}</small>
                     <div class="ml-1 mt-2">
                         <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light">Modifier</button>
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
                         </div>
                         <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
@@ -232,7 +236,7 @@ function displayServiceilyassheader(info){
 }
 
 
-// baalla services pack
+//services pack
 fetch("../src/data.json")
 .then((response) => response.json())
 .then((data) => displayServicebaallapack(data.servicepack));
@@ -259,7 +263,7 @@ toggle.addEventListener("click", function(){
 });
 
 var cont = 3;
-var cint = 0;
+var cint = 1;
 // baalla ajoute service
 let ajouterService = document.getElementById("ajouter-serv");
 ajouterService.addEventListener("click", function(){
@@ -283,7 +287,8 @@ ajouterService.addEventListener("click", function(){
                     <small class="text-xs font-light pl-1">${description}</small>
                     <div class="ml-1 mt-2">
                         <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" id="${cont}">Modifier</button>
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
                         </div>
                         <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
@@ -323,7 +328,8 @@ ajouterService2.addEventListener("click", function(){
                     <small class="text-xs font-light pl-1">${description}</small>
                     <div class="ml-1 mt-2">
                         <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light">Modifier</button>
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
                         </div>
                         <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
@@ -363,7 +369,8 @@ ajouterService3.addEventListener("click", function(){
                     <small class="text-xs font-light pl-1">${description}</small>
                     <div class="ml-1 mt-2">
                         <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light">Modifier</button>
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
                         </div>
                         <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
@@ -392,7 +399,8 @@ ajouterService4.addEventListener("click", function(){
     const description = document.getElementById("description").value;
     const categorie = document.getElementById("category").value;
     const blkdiv = document.getElementById("ilyass-services");
-    blkdiv.insertAdjacentHTML("beforeend", `<div class="border-2 border-black w-72">
+    
+    blkdiv.insertAdjacentHTML("beforeend", `<div class="border-2 border-black w-72" id="ser-${cint}">
                     <figure>
                         <img src="${imageUrl}" alt="Service Image">
                     </figure>
@@ -402,15 +410,17 @@ ajouterService4.addEventListener("click", function(){
                     <small class="text-xs font-light pl-1">${description}</small>
                     <div class="ml-1 mt-2">
                         <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light">Modifier</button>
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
+                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
                         </div>
                         <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
                             <p class="text-[10px]">${categorie}</p>
                         </div>
                 </div>`
-        )
+        );
         
+        cint = cint + 1;
         document.getElementById("name").value = " "
         document.getElementById("price").value = " "
         document.getElementById("description").value = " "
@@ -424,3 +434,36 @@ closeBtn.addEventListener("click", function(){
     const crud_modal = document.getElementById("crud-modal");
     crud_modal.style = "display: hidden";
 });
+
+// The function of delete an card service
+function supprifunc(event) {
+    const elementToRemove = event.target.closest('.border-2.border-black.w-72');
+    if (elementToRemove) {
+      elementToRemove.remove();
+    } else {
+      console.error("Element to remove not found");
+    }
+  }
+
+//The function of update
+  function modifierinfo(event) {
+    const service = event.target.closest('.border-2.border-black.w-72');
+    const oldTitle = service.querySelector('h1').textContent;
+    const oldPrice = service.querySelector('p').textContent;
+    const oldDescription = service.querySelector('small').textContent;
+  
+    service.querySelector('h1').innerHTML = `<input type="text" value="${oldTitle}">`;
+    service.querySelector('p').innerHTML = `<input type="text" value="${oldPrice}">`;
+    service.querySelector('small').innerHTML = `<textarea>${oldDescription}</textarea>`;
+  
+    const saveButton = document.createElement('button');
+    saveButton.textContent = 'Save';
+    service.appendChild(saveButton);
+  
+    saveButton.addEventListener('click', () => {
+      service.querySelector('h1').textContent = service.querySelector('input').value;
+      service.querySelector('p').textContent = service.querySelector('input').value;
+      service.querySelector('small').textContent = service.querySelector('textarea').value;
+      saveButton.remove();
+    });
+  }
