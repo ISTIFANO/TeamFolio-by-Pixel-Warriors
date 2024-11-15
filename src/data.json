@@ -114,6 +114,7 @@
 
   "projects": [
     {
+      "lien": "../pages/project1.html",
       "image": "../assests/images/project1.jpg",
       "title": "Site web responsive"
     },
@@ -122,18 +123,22 @@
       "title": "Application d'une banque"
     },
     {
+      "lien": "../pages/project1.html",
       "image": "../assests/images/booking.jpg",
       "title": "Application de booking"
     },
     {
+      "lien": "../pages/project1.html",
       "image": "../assests/images/fit.jpg",
       "title": "Application de fitness"
     },
     {
+      "lien": "../pages/project1.html",
       "image": "../assests/images/Translate.jpg",
       "title": "Application de traduction"
     },
     {
+      "lien": "../pages/project1.html",
       "image": "../assests/images/elearning.jpg",
       "title": "Platforme E-learning"
     }
