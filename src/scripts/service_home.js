@@ -6,7 +6,7 @@ fetch("../src/data.json")
 function displayServiceFaison(info){
     const allServ = document.getElementById("glb-servc");
     allServ.innerHTML = info.map((item)=>{
-        return `<div class="bg-[#E8D3BE] w-72 h-56 rounded-lg">
+        return `<div class="bg-[#80ED99] w-72 h-56 rounded-lg">
         <h1 class="p-2 text-orange-700 font-medium text-2xl font-[lora]">${item.cardNumber}</h1>
         <p class="pl-2 font-semibold">${item.title}</p>
         <small class="pl-2 text-xs">${item.caption}</small>
@@ -25,11 +25,11 @@ fetch("../src/data.json")
 function displaynotreTeam(team){
     const notreteam = document.getElementById("notre-team");
     notreteam.innerHTML = team.map((item)=>{
-        return `<div class="max-w-xs mx-auto bg-[#E8D3BE] rounded-lg shadow-lg text-center overflow-hidden ">
-            <div class="bg-[#FFC57A] p-4 ">
+        return `<div class="max-w-xs mx-auto bg-[#bcf7d1] rounded-lg shadow-lg text-center overflow-hidden ">
+            <div class="bg-[#86f0ad] p-4 ">
                 <h2 class="text-xl font-bold text-gray-800 ">${item.name}</h2>
                 <p class="text-gray-600">${item.role}</p>
-                <a href="${item.linkpg}"><button class="bg-[#FFC53A] py-1 px-5 rounded-lg mt-5">Acceder aux Services</button></a>
+                <a href="${item.linkpg}"><button class="bg-[#38A3A5] py-1 px-5 rounded-lg mt-5">Acceder aux Services</button></a>
             </div>
             
             <div class="flex justify-center space-x-4 p-4 text-gray-600">
