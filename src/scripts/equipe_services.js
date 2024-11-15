@@ -15,9 +15,9 @@ function displayServiceBaalla(info){
                     <h2 class="text-sm pl-1 font-medium">Description</h2>
                     <small class="text-xs font-light pl-1"> ${item.description}</small>
                     <div class="ml-1 mt-2">
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
                         </div>
                         <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
@@ -47,9 +47,9 @@ function displayServiceAddar(info){
                     <h2 class="text-sm pl-1 font-medium">Description</h2>
                     <small class="text-xs font-light pl-1"> ${item.description}</small>
                     <div class="ml-1 mt-2">
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
                         </div>
                         <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
@@ -79,9 +79,9 @@ function displayServiceaamir(info){
                     <h2 class="text-sm pl-1 font-medium">Description</h2>
                     <small class="text-xs font-light pl-1"> ${item.description}</small>
                     <div class="ml-1 mt-2">
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
                         </div>
                         <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
@@ -111,9 +111,9 @@ function displayServiceilyass(info){
                     <h2 class="text-sm pl-1 font-medium">Description</h2>
                     <small class="text-xs font-light pl-1"> ${item.description}</small>
                     <div class="ml-1 mt-2">
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
                         </div>
                         <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
@@ -135,13 +135,13 @@ fetch("../src/data.json")
 function displayServiceBaallaheader(info){
     const baallaServiceheader = document.getElementById("baalla-services-header");
     baallaServiceheader.innerHTML = info.map((item)=>{
-        return `<div class="shadow-md max-w-72 rounded-tr-3xl rounded-tl-3xl rounded-bl-3xl bg-[#F8E4D4]">
+        return `<div class="shadow-md max-w-72 rounded-tr-3xl rounded-tl-3xl rounded-bl-3xl bg-[#bcf7d1]">
                     <figure>
                         <img src="${item.image}" alt="${item.name}" width="150" class="rounded-t-3xl">
                     </figure>
                     <h1 class="font-semibold pt-1 ml-1">${item.name}</h1>
                     <small class="text-xs font-light block ml-1">${item.role}</small>
-                    <button class="bg-[#FFD6A2] pt-1 pb-1 pl-3 pr-3 font-light text-xs rounded-lg mt-5 mb-2 ml-1">Contacter</button>
+                    <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 font-light text-xs rounded-lg mt-5 mb-2 ml-1">Contacter</button>
                 </div>`
     
     })
@@ -163,13 +163,13 @@ fetch("../src/data.json")
 function displayServiceaddarheader(info){
     const addarServiceheader = document.getElementById("addar-services-header");
     addarServiceheader.innerHTML = info.map((item)=>{
-        return `<div class="shadow-md max-w-72 rounded-tr-3xl rounded-tl-3xl rounded-bl-3xl bg-[#F8E4D4]">
+        return `<div class="shadow-md max-w-72 rounded-tr-3xl rounded-tl-3xl rounded-bl-3xl bg-[#bcf7d1]">
                     <figure>
                         <img src="${item.image}" alt="${item.name}" width="150" class="rounded-t-3xl">
                     </figure>
                     <h1 class="font-semibold pt-1 ml-1">${item.name}</h1>
                     <small class="text-xs font-light block ml-1">${item.role}</small>
-                    <button class="bg-[#FFD6A2] pt-1 pb-1 pl-3 pr-3 font-light text-xs rounded-lg mt-5 mb-2 ml-1">Contacter</button>
+                    <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 font-light text-xs rounded-lg mt-5 mb-2 ml-1">Contacter</button>
                 </div>`
     
     })
@@ -190,13 +190,13 @@ fetch("../src/data.json")
 function displayServiceaamirheader(info){
     const aamirServiceheader = document.getElementById("aamir-services-header");
     aamirServiceheader.innerHTML = info.map((item)=>{
-        return `<div class="shadow-md max-w-72 rounded-tr-3xl rounded-tl-3xl rounded-bl-3xl bg-[#F8E4D4]">
+        return `<div class="shadow-md max-w-72 rounded-tr-3xl rounded-tl-3xl rounded-bl-3xl bg-[#bcf7d1]">
                     <figure>
                         <img src="${item.image}" alt="${item.name}" width="150" class="rounded-t-3xl">
                     </figure>
                     <h1 class="font-semibold pt-1 ml-1">${item.name}</h1>
                     <small class="text-xs font-light block ml-1">${item.role}</small>
-                    <button class="bg-[#FFD6A2] pt-1 pb-1 pl-3 pr-3 font-light text-xs rounded-lg mt-5 mb-2 ml-1">Contacter</button>
+                    <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 font-light text-xs rounded-lg mt-5 mb-2 ml-1">Contacter</button>
                 </div>`
     
     })
@@ -217,13 +217,13 @@ fetch("../src/data.json")
 function displayServiceilyassheader(info){
     const ilyassServiceheader = document.getElementById("ilyass-services-header");
     ilyassServiceheader.innerHTML = info.map((item)=>{
-        return `<div class="shadow-md max-w-72 rounded-tr-3xl rounded-tl-3xl rounded-bl-3xl bg-[#F8E4D4]">
+        return `<div class="shadow-md max-w-72 rounded-tr-3xl rounded-tl-3xl rounded-bl-3xl bg-[#bcf7d1]">
                     <figure>
                         <img src="${item.image}" alt="${item.name}" width="150" class="rounded-t-3xl">
                     </figure>
                     <h1 class="font-semibold pt-1 ml-1">${item.name}</h1>
                     <small class="text-xs font-light block ml-1">${item.role}</small>
-                    <button class="bg-[#FFD6A2] pt-1 pb-1 pl-3 pr-3 font-light text-xs rounded-lg mt-5 mb-2 ml-1">Contacter</button>
+                    <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 font-light text-xs rounded-lg mt-5 mb-2 ml-1">Contacter</button>
                 </div>`
     
     })
@@ -244,11 +244,11 @@ fetch("../src/data.json")
 function displayServicebaallapack(info){
     const baallaServicepack = document.getElementById("services-pack");
     baallaServicepack.innerHTML = info.map((item)=>{
-        return `<div class="bg-[#F5E6D4] rounded pt-5 pl-2 pb-5 pr-2 w-full">
+        return `<div class="bg-[#bcf7d1] rounded pt-5 pl-2 pb-5 pr-2 w-full">
                     <h1 class="font-semibold text-lg">${item.title}</h1>
                     <h2 class="text-sm pb-5">${item.prix}MAD/MOIS</h2>
                     <p class="text-sm font-light pb-3">${item.description}</p>
-                    <button class="bg-[#FFD6A2] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light">Souscrire</button>
+                    <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light">Souscrire</button>
                 </div>`
     
     })
@@ -286,9 +286,9 @@ ajouterService.addEventListener("click", function(){
                     <h2 class="text-sm pl-1 font-medium">Description</h2>
                     <small class="text-xs font-light pl-1">${description}</small>
                     <div class="ml-1 mt-2">
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
                         </div>
                         <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
@@ -327,9 +327,9 @@ ajouterService2.addEventListener("click", function(){
                     <h2 class="text-sm pl-1 font-medium">Description</h2>
                     <small class="text-xs font-light pl-1">${description}</small>
                     <div class="ml-1 mt-2">
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
                         </div>
                         <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
@@ -368,9 +368,9 @@ ajouterService3.addEventListener("click", function(){
                     <h2 class="text-sm pl-1 font-medium">Description</h2>
                     <small class="text-xs font-light pl-1">${description}</small>
                     <div class="ml-1 mt-2">
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
                         </div>
                         <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
@@ -409,9 +409,9 @@ ajouterService4.addEventListener("click", function(){
                     <h2 class="text-sm pl-1 font-medium">Description</h2>
                     <small class="text-xs font-light pl-1">${description}</small>
                     <div class="ml-1 mt-2">
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
-                        <button class="bg-[#FFC57A] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pr-3 pl-3 rounded text-xs font-light">Demander</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "modifierinfo(event)">Modifier</button>
+                        <button class="bg-[#38A3A5] pt-1 pb-1 pl-3 pr-3 rounded text-xs font-light" onclick = "supprifunc(event)">Supprimer</button>
                         </div>
                         <div class="flex gap-1 items-center mt-2 mb-2 ml-2">
                             <p class="text-[10px] font-medium">Categorie: </p>
