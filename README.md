@@ -7,8 +7,9 @@ Ce projet est en cours de développement et certaines fonctionnalités peuvent �
 
 Ce projet vise à créer un site web de portfolio dynamique pour une équipe de freelances spécialisés dans le développement web. Le site permettra à chaque membre de l'équipe de présenter ses compétences, ses projets, ses services et ses témoignages clients. Il intégrera un backend robuste utilisant des fichiers JSON ou XML pour stocker et gérer les données, offrant ainsi une base solide pour une future évolutivité.
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/Abdelha98kim/TeamFolio-by-Pixel-Warriors.svg)](https://github.com/Abdelha98kim/TeamFolio-by-Pixel-Warriors)
-
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/ISTIFANO/TeamFolio-by-Pixel-Warriors.git.svg)](https://github.com/ISTIFANO/TeamFolio-by-Pixel-Warriors.git/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/ISTIFANO/TeamFolio-by-Pixel-Warriors.git.svg)](https://github.com/ISTIFANO/TeamFolio-by-Pixel-Warriors.git/network/members)
 ## Ressources
 
 * **Suivi du projet:** Consultez notre tableau de bord Jira pour suivre l'avancement des tâches : [Suivi du projet sur Jira](https://elamiriamir7.atlassian.net/jira/software/projects/TBPW/boards/4)
