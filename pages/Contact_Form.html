@@ -1,0 +1,173 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+</head>
+<body class="bg-gray-100">
+
+<section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16">
+        <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Contact with us</h2>
+        <form id="contactForm">
+            <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
+                <div class="sm:col-span-2">
+                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your name</label>
+                    <input type="text" id="name" class="w-full p-2.5 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" required>
+                </div>
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                    <input type="email" id="email" class="w-full p-2.5 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" required>
+                </div>
+                <div>
+                    <label for="prix" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">prix</label>
+                    <input type="number" id="prix" class="w-full p-2.5 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" required>
+                </div>
+                <div>
+                    <label for="personne" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select a member</label>
+                    <select id="personne" class="w-full p-2.5 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" required>
+                        <option value="">Select a member</option>
+                        <option value="ilyass">Ilyass</option>
+                        <option value="aamir">Aamir</option>
+                        <option value="abdullah">Abdullah</option>
+                        <option value="abdullhakim">Abdullhakim</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="jour" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">nombre de jour pour finir ton order</label>
+                    <input type="number" id="jour" class="w-full p-2.5 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" required>
+                </div> 
+                <div class="sm:col-span-2">
+                    <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description de ton projet</label>
+                    <textarea id="description" class="w-full p-2.5 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" rows="4" required></textarea>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Message</label>
+                    <textarea id="message" class="w-full p-2.5 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" rows="4" required></textarea>
+                </div>
+            </div>
+            <button type="button" onclick="addOrUpdateContact()" class="mt-4 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Send Message</button>
+        </form>
+        <div id="contactList" class="mt-8">
+            <h3 class="text-lg font-semibold">Entries</h3>
+            <table id="contactsTable" class="table-auto w-full">
+                <thead>
+                    <tr>
+                        <th class="px-4 py-2">Name</th>
+                        <th class="px-4 py-2">Email</th>
+                        <th class="px-4 py-2">prix</th>
+                        <th class="px-4 py-2">Person</th>
+                        <th class="px-4 py-2">jour</th>
+                        <th class="px-4 py-2">Description</th>
+                        <th class="px-4 py-2">Message</th>
+                        <th class="px-4 py-2">Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div id="availabilityList" class="mt-8">
+            <h3 class="text-lg font-semibold">Member Availability</h3>
+            <table id="availabilityTable" class="table-auto w-full">
+                <thead>
+                    <tr>
+                        <th class="px-4 py-2">Member</th>
+                        <th class="px-4 py-2">Availability</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<script>
+    let currentRowIndex = -1;
+
+    function addOrUpdateContact() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const prix = document.getElementById('prix').value;
+        const personne = document.getElementById('personne').value;
+        const jour = document.getElementById('jour').value;
+        const description = document.getElementById('description').value;
+        const message = document.getElementById('message').value;
+
+        const tableBody = document.getElementById('contactsTable').getElementsByTagName('tbody')[0];
+
+        if (currentRowIndex === -1) {
+            const newRow = tableBody.insertRow();
+            newRow.innerHTML = `
+                <td class="border px-4 py-2">${name}</td>
+                <td class="border px-4 py-2">${email}</td>
+                <td class="border px-4 py-2">${prix}</td>
+                <td class="border px-4 py-2">${personne}</td>
+                <td class="border px-4 py-2">${jour}</td>
+                <td class="border px-4 py-2">${description}</td>
+                <td class="border px-4 py-2">${message}</td>
+                <td class="border px-4 py-2">
+                    <button onclick="editContact(this)" class="text-blue-500 hover:text-blue-700">Edit</button>
+                    <button onclick="deleteContact(this)" class="text-red-500 hover:text-red-700">Delete</button>
+                </td>
+            `;
+        } else {
+            // modif
+            const row = tableBody.rows[currentRowIndex];
+            row.cells[0].innerText = name;
+            row.cells[1].innerText = email;
+            row.cells[2].innerText = prix;
+            row.cells[3].innerText = personne;
+            row.cells[4].innerText = jour;
+            row.cells[5].innerText = description;
+            row.cells[6].innerText = message;
+            currentRowIndex = -1; // A0
+        }
+
+        // suprime la formulair
+        document.getElementById('contactForm').reset();
+    }
+
+    function editContact(button) {
+        const row = button.parentElement.parentElement;
+        currentRowIndex = row.rowIndex - 1;
+
+        document.getElementById('name').value = row.cells[0].innerText;
+        document.getElementById('email').value = row.cells[1].innerText;
+        document.getElementById('prix').value = row.cells[2].innerText;
+        document.getElementById('personne').value = row.cells[3].innerText;
+        document.getElementById('jour').value = row.cells[4].innerText;
+        document.getElementById('description').value = row.cells[5].innerText;
+        document.getElementById('message').value = row.cells[6].innerText;
+    }
+
+    function deleteContact(button) {
+        const row = button.parentElement.parentElement;
+        row.parentElement.removeChild(row);
+    const memberAvailability = [
+        { name: "Ilyass", availability: "Monday to Friday, 9 AM - 5 PM" },
+        { name: "Aamir", availability: "Monday to Thursday, 10 AM - 4 PM" },
+        { name: "Abdullah", availability: "Tuesday to Friday, 11 AM - 6 PM" },
+        { name: "Abdullhakim", availability: "Monday to Wednesday, 8 AM - 3 PM" }
+    ];
+    }
+    function loadAvailability() {
+        const tableBody = document.getElementById('availabilityTable').getElementsByTagName('tbody')[0];
+        memberAvailability.forEach(member => {
+            const newRow = tableBody.insertRow();
+            newRow.innerHTML = `
+                <td class="border px-4 py-2">${member.name}</td>
+                <td class="border px-4 py-2">${member.availability}</td>
+            `;
+        });
+    }
+
+    // pour relaod les donner rest
+
+    window.onload = loadAvailability;
+    
+</script>
+
+</body>
+</html>

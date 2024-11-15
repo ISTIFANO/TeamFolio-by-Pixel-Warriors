@@ -275,6 +275,23 @@
       "prix": 1850,
       "description": "Je vais conventir tous votre design a une complete site web.",
       "categorie": "complete site web"
-    }
+    },
+      {
+          "nom": "Ilyass",
+          "disponibilite": "Lundi - Vendredi: 9h - 17h"
+      },
+      {
+          "nom": "Abdullhakim",
+          "disponibilite": "Lundi - Vendredi: 10h - 18h"
+      },
+      {
+          "nom": "Abdullah",
+          "disponibilite": "Mardi - Samedi: 8h - 16h"
+      },
+      {
+          "nom": "Aamir",
+          "disponibilite": "Lundi - Vendredi: 9h - 17h"
+      }
+  ]
   ]
 }

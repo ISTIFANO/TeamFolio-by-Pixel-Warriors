@@ -1,0 +1,128 @@
+<reviews>
+        <review>
+            <id>1</id>
+            <username>salma tergi</username>
+            <rating>★★★★★</rating>
+            <comment>Excellent service et personnel sympathique !</comment>
+            <date>2024-09-01</date>
+        </review>
+        <review>
+            <id>2</id>
+            <username>ahmed foulan</username>
+            <rating>★★★★☆</rating>
+            <comment>Très bonne expérience, mais le temps d'attente était un peu long.</comment>
+            <date>2024-09-02</date>
+        </review>
+        <review>
+            <id>3</id>
+            <username>aymen jebran</username>
+            <rating>★★★☆☆</rating>
+            <comment>Service moyen, rien de spécial.</comment>
+            <date>2024-09-03</date>
+        </review>
+        <review>
+            <id>4</id>
+            <username>khadija ameksa</username>
+            <rating>★★★★★</rating>
+            <comment>J'ai vraiment adoré ! Je reviendrai.</comment>
+            <date>2024-10-04</date>
+        </review>
+        <review>
+            <id>5</id>
+            <username>abdullilah croud</username>
+            <rating>★★☆☆☆</rating>
+            <comment>Pas satisfait du service.</comment>
+            <date>2024-01-05</date>
+        </review>
+        <review>
+            <id>6</id>
+            <username>abdullhaq el ghandour</username>
+            <rating>★★☆☆☆</rating>
+            <comment>Très bonne expérience, personnel accueillant.</comment>
+            <date>2024-01-05</date>
+        </review>
+        <review>
+            <id>7</id>
+            <username>wassim oucock</username>
+            <rating>★★★★★</rating>
+            <comment>Excellent service, ambiance agréable. Je recommande vivement!</comment>
+            <date>2024-01-05</date>
+        </review>
+        <review>
+            <id>8</id>
+            <username>Abdelkebir Hadoui</username>
+            <rating>★★★☆☆</rating>
+            <comment>Le service est correct mais pourrait être amélioré.</comment>
+            <date>2024-01-05</date>
+        </review>
+        <review>
+            <id>9</id>
+            <username>Abir Meskini</username>
+            <rating>★☆☆☆☆</rating>
+            <comment>Très déçu, service lent et inefficace.</comment>
+            <date>2024-01-05</date>
+        </review>
+        <review>
+            <id>10</id>
+            <username>Ayoub Benmansour</username>
+            <rating>★★★★☆</rating>
+            <comment>Bonne qualité pour le prix, ambiance agréable.</comment>
+            <date>2024-01-05</date>
+        </review>
+        <review>
+            <id>11</id>
+            <username>Ilyass samoudi</username>
+            <rating>★★☆☆☆</rating>
+            <comment>Assez déçu par le service, pas à la hauteur de mes attentes.</comment>
+            <date>2024-01-05</date>
+        </review>
+        <review>
+            <id>12</id>
+            <username>kamal younes</username>
+            <rating>★★★★★</rating>
+            <comment>Expérience incroyable, j’ai adoré chaque moment !</comment>
+            <date>2024-01-05</date>
+        </review>
+        <review>
+            <id>13</id>
+            <username>Kaoutar Labjioui</username>
+            <rating>★★★☆☆</rating>
+            <comment>Service correct, mais rien de particulièrement marquant.</comment>
+            <date>2024-01-05</date>
+        </review>
+        <review>
+            <id>14</id>
+            <username>Lahmidi Abderrahmane</username>
+            <rating>★★★★☆</rating>
+            <comment>Bon service, personnel sympathique et serviable.</comment>
+            <date>2024-01-05</date>
+        </review>
+        <review>
+            <id>15</id>
+            <username>Smail Najim</username>
+            <rating>★☆☆☆☆</rating>
+            <comment>Très mauvaise expérience, je ne recommande pas du tout.</comment>
+            <date>2024-01-05</date>
+        </review>
+        <review>
+            <id>16</id>
+            <username>Soulayman Jaafar</username>
+            <rating>★★★★★</rating>
+            <comment>Service impeccable, je reviendrai sans hésitation !</comment>
+            <date>2024-01-05</date>
+        </review>
+        <review>
+            <id>17</id>
+            <username>Yassir Mahir</username>
+            <rating>★★★★☆</rating>
+            <comment>Très bon rapport qualité-prix, je suis satisfait.</comment>
+            <date>2024-01-05</date>
+        </review>
+        <review>
+            <id>18</id>
+            <username>Zakaria Kardache</username>
+            <rating>★★☆☆☆</rating>
+            <comment>Service médiocre, temps d'attente trop long.</comment>
+            <date>2024-01-05</date>
+        </review>
+    </reviews>
