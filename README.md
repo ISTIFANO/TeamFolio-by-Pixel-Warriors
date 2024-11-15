@@ -1,9 +1,19 @@
 
 ### **Site de Portfolio pour DevConnect**
 
+## Authors
+
+- [@Abdelhakim Baalla](https://github.com/Abdelha98kim)
+- [@Aamir El Amiri](https://github.com/ISTIFANO)
+- [@Abdellah Addar](https://github.com/abdell3)
+
+### Avertissement ⚠️
+Ce projet est en cours de développement et certaines fonctionnalités peuvent être sujettes à changement.
+
 **Présentation**
 
 Ce projet vise à créer un site web de portfolio dynamique pour une équipe de freelances spécialisés dans le développement web. Le site permettra à chaque membre de l'équipe de présenter ses compétences, ses projets, ses services et ses témoignages clients. Il intégrera un backend robuste utilisant des fichiers JSON ou XML pour stocker et gérer les données, offrant ainsi une base solide pour une future évolutivité.
+
 
 ## Ressources
 
@@ -69,4 +79,10 @@ Ce projet vise à créer un site web de portfolio dynamique pour une équipe de 
 * **Rendu côté serveur:** Améliorer le SEO et les performances avec le rendu côté serveur.
 
 **En suivant ces directives, nous pouvons créer un site web de portfolio de haute qualité qui présente efficacement les compétences et l'expertise de l'équipe DevConnect.**
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
 
