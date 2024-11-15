@@ -1,6 +1,8 @@
 {
   "team": [
     {
+      "linkpg":"../pages/aamir_service.html",
+      "quote": "' wake(); eat(); code(); repeat();'",
       "id": 1,
       "name": "Aamir El Amiri",
       "role": "Développeur Web",
@@ -27,6 +29,8 @@
     },
     
     {
+      "linkpg":"../pages/baalla_service.html",
+      "quote": "'Je suis Un résolveur des problèmes, avec du code'",
       "id": 2,
       "name": "Abdelhakim Baalla",
       "role": "Développeur Full Stack",
@@ -46,13 +50,15 @@
         }
       ],
       "socialMedia": {
-        "twitter": "https://x.com/Abdelhakim99891",
+        "twitter": "https://twitter.com/KarimAmrani",
         "linkedin": "https://www.linkedin.com/in/abdelhakim-baalla-720120253/",
         "github": "https://github.com/Abdelha98kim"
       }
     },
 
     {
+      "linkpg":"../pages/addar_service.html",
+      "quote": "'Hello World!'",
       "id": 3,
       "name": "abdellah addar ",
       "role": "Designer UI/UX",
@@ -77,6 +83,8 @@
       }
     },
     {
+      "linkpg":"../pages/ilyass_service.html",
+      "quote": "'My Code's Work, i don't Have any idea how'",
       "id": 4,
       "name": "ilyass Elassal",
       "role": "Chef de projet",
@@ -137,13 +145,36 @@
       "testimonialId": 301,
       "clientName": "Maxime Dupont",
       "message": "Service client impeccable et très réactif.",
-      "date": "2023-10-10"
+      "date": "2023-10-10",
+      "image":"../assests/images/personne.jpg"
     },
     {
       "testimonialId": 302,
       "clientName": "Isabelle Roux",
       "message": "Expérience très agréable.",
-      "date": "2023-11-01"
+      "date": "2023-11-01",
+      "image": "../assests/images/personne.jpg"
+    },
+    {
+      "testimonialId": 303,
+      "clientName": "Maxime Dupont",
+      "message": "Service client impeccable et très réactif.",
+      "date": "2023-10-10",
+      "image":"../assests/images/personne.jpg"
+    },
+    {
+      "testimonialId": 304,
+      "clientName": "Maxime Dupont",
+      "message": "Service client impeccable et très réactif.",
+      "date": "2023-10-10",
+      "image":"../assests/images/personne.jpg"
+    },
+    {
+      "testimonialId": 305,
+      "clientName": "Maxime Dupont",
+      "message": "Service client impeccable et très réactif.",
+      "date": "2023-10-10",
+      "image":"../assests/images/personne.jpg"
     }
   ],
 
@@ -214,7 +245,7 @@
       "title": "Complete Lessons site Web",
       "prix": 100,
       "description": "Je vais conventir tous votre design a une complete site web.",
-      "categorie": "complete site web"
+      "categorie": "Complete site web"
     }
   ],
 
@@ -275,23 +306,61 @@
       "prix": 1850,
       "description": "Je vais conventir tous votre design a une complete site web.",
       "categorie": "complete site web"
+    }
+  ],
+
+
+  "baallaservicehead": [
+    {
+      "image": "../assests/images/Abdelhakim-picture.jpg",
+      "name": "Abdelhakim Baalla",
+      "role": "Développeur Full Stack",
+      "quote": "'Je suis Un résolveur des problèmes, avec du code'"
+    }
+  ],
+
+
+  "addarservicehead": [
+    {
+      "image": "../assests/images/addar-picture.jpg",
+      "name": "abdellah addar ",
+      "role": "Designer UI/UX",
+      "quote": "'Hello World!'"
+    }
+  ],
+
+
+  "aamirservicehead": [
+    {
+      "image": "../assests/images/aamir-picture.jpg",
+      "name": "Aamir El Amiri",
+      "role": "Développeur Web",
+      "quote": "'wake(); eat(); code(); repeat();'"
+    }
+  ],
+
+
+  "ilyassservicehead": [
+    {
+      "image": "../assests/images/ilyass-picture.jpg",
+      "name": "ilyass Elassal",
+      "role": "Chef de projet",
+      "quote": "'My Code's Work, i don't Have any idea how'"
+    }
+  ],
+
+
+  "servicepack":[
+    {
+      "title": "Standard",
+      "prix": 3000,
+      "description": "Idéal pour les entreprises avec des tâches de conception petites mais régulières chaque mois. Parfait pour maintenir un flux de travail de conception cohérent."
     },
-      {
-          "nom": "Ilyass",
-          "disponibilite": "Lundi - Vendredi: 9h - 17h"
-      },
-      {
-          "nom": "Abdullhakim",
-          "disponibilite": "Lundi - Vendredi: 10h - 18h"
-      },
-      {
-          "nom": "Abdullah",
-          "disponibilite": "Mardi - Samedi: 8h - 16h"
-      },
-      {
-          "nom": "Aamir",
-          "disponibilite": "Lundi - Vendredi: 9h - 17h"
-      }
+    {
+      "title": "Pro",
+      "prix": 5500,
+      "description": "Idéal pour les entreprises nécessitant un travail de conception approfondi et un volume de tâches plus élevé."
+    }
   ]
-  ]
+
 }
