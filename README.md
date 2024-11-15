@@ -1,9 +1,13 @@
 
 ### **Site de Portfolio pour DevConnect**
+### Avertissement ⚠️
+Ce projet est en cours de développement et certaines fonctionnalités peuvent être sujettes à changement.
 
 **Présentation**
 
 Ce projet vise à créer un site web de portfolio dynamique pour une équipe de freelances spécialisés dans le développement web. Le site permettra à chaque membre de l'équipe de présenter ses compétences, ses projets, ses services et ses témoignages clients. Il intégrera un backend robuste utilisant des fichiers JSON ou XML pour stocker et gérer les données, offrant ainsi une base solide pour une future évolutivité.
+
+[![GitHub last commit](https://img.shields.io/github/last-commit/Abdelha98kim/TeamFolio-by-Pixel-Warriors.svg)](https://github.com/Abdelha98kim/TeamFolio-by-Pixel-Warriors)
 
 ## Ressources
 
