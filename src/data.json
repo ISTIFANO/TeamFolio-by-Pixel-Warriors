@@ -1,129 +1,371 @@
 {
-    "team": [
-      {
-        "id": 1,
-        "name": "John Doe",
-        "role": "Développeur Web",
-        "bio": "Développeur passionné avec 5 ans d'expérience en JavaScript et React.",
-        "skills": ["JavaScript", "React", "Node.js"],
-        "clientReviews": [
-          {
-            "reviewId": 101,
-            "clientName": "Alice Martin",
-            "rating": 4.5,
-            "comment": "Très professionnel et réactif.",
-            "date": "2023-11-06"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "name": "Jane Smith",
-        "role": "Designer",
-        "bio": "Designer UX/UI avec un œil pour les détails.",
-        "skills": ["Photoshop", "Illustrator", "Figma"],
-        "clientReviews": [
-          {
-            "reviewId": 102,
-            "clientName": "Bob Lee",
-            "rating": 5,
-            "comment": "Design de qualité exceptionnelle.",
-            "date": "2023-10-30"
-          }
-        ]
-      }
-    ],
-    "projects": [
-      {
-        "projectId": 1,
-        "title": "Site Web E-commerce",
-        "category": "Développement Web",
-        "summary": "Un site de vente en ligne pour les petites entreprises.",
-        "teamMember": "John Doe",
-        "technologies": ["HTML", "CSS", "JavaScript", "React"],
-        "reviews": [
-          {
-            "reviewId": 201,
-            "clientName": "Claire M.",
-            "rating": 4,
-            "comment": "Bonne expérience, site rapide.",
-            "date": "2023-09-10"
-          }
-        ],
-        "popularity": "popular"
-      },
-      {
-        "projectId": 2,
-        "title": "Application Mobile",
-        "category": "Développement Mobile",
-        "summary": "App de suivi des habitudes pour utilisateurs mobiles.",
-        "teamMember": "Jane Smith",
-        "technologies": ["React Native", "Firebase"],
-        "reviews": [
-          {
-            "reviewId": 202,
-            "clientName": "Danielle P.",
-            "rating": 5,
-            "comment": "Fonctionnalités très pratiques.",
-            "date": "2023-08-15"
-          }
-        ],
-        "popularity": "recent"
-      }
-    ],
-    "services": [
-      {
-        "serviceId": 1,
-        "title": "Développement Web",
-        "description": "Création de sites web modernes et réactifs.",
-        "specialty": "Développement Web",
-        "price": 500,
-        "duration": "2 semaines",
-        "teamMember": "John Doe"
-      },
-      {
-        "serviceId": 2,
-        "title": "Conception Graphique",
-        "description": "Design de logo et identité visuelle.",
-        "specialty": "Design",
-        "price": 300,
-        "duration": "1 semaine",
-        "teamMember": "Jane Smith"
-      }
-    ],
-    "testimonials": [
-      {
-        "testimonialId": 301,
-        "clientName": "Maxime Dupont",
-        "message": "Service client impeccable et très réactif.",
-        "date": "2023-10-10"
-      },
-      {
-        "testimonialId": 302,
-        "clientName": "Isabelle Roux",
-        "message": "Expérience très agréable.",
-        "date": "2023-11-01"
-      }
-    ],
-    "availability": [
-      {
-        "memberId": 1,
-        "name": "John Doe",
-        "availability": {
-          "monday": "9am - 5pm",
-          "tuesday": "10am - 4pm",
-          "wednesday": "9am - 5pm"
+  "team": [
+    {
+      "linkpg":"../pages/aamir_service.html",
+      "quote": "' wake(); eat(); code(); repeat();'",
+      "id": 1,
+      "name": "Aamir El Amiri",
+      "role": "Développeur Web",
+      "image": "../assests/images/aamir-picture.jpg",
+      "imagepng": "../assests/images/aamir-picture.png",
+
+      "bio": "Développeur passionné avec 5 ans d'expérience en JavaScript et React.",
+      "skills": ["JavaScript", "React", "Node.js"],
+
+      "clientReviews": [
+        {
+          "reviewId": 101,
+          "clientName": "Alice Martin",
+          "rating": 4.5,
+          "comment": "Très professionnel et réactif.",
+          "date": "2023-11-06"
         }
-      },
-      {
-        "memberId": 2,
-        "name": "Jane Smith",
-        "availability": {
-          "monday": "11am - 3pm",
-          "tuesday": "10am - 4pm",
-          "thursday": "12pm - 6pm"
-        }
+      ],
+      "socialMedia": {
+        "twitter": "https://twitter.com/KarimAmrani",
+        "linkedin": "https://linkedin.com/in/KarimAmrani",
+        "github": "https://github.com/KarimAmrani"
       }
-    ]
-  }
+    },
+    
+    {
+      "linkpg":"../pages/baalla_service.html",
+      "quote": "'Je suis Un résolveur des problèmes, avec du code'",
+      "id": 2,
+      "name": "Abdelhakim Baalla",
+      "role": "Développeur Full Stack",
+      "image": "../assests/images/Abdelhakim-picture.jpg",
+      "imagepng": "../assests/images/Abdelhakim-picture.png",
+
+      "bio": "Développeur passionné avec 5 ans d'expérience en JavaScript et React.",
+      "skills": ["JavaScript", "React", "Node.js", "Tailwind", "php"],
+
+      "clientReviews": [
+        {
+          "reviewId": 101,
+          "clientName": "Alice Martin",
+          "rating": 4.5,
+          "comment": "Très professionnel et réactif.",
+          "date": "2023-11-06"
+        }
+      ],
+      "socialMedia": {
+        "twitter": "https://twitter.com/KarimAmrani",
+        "linkedin": "https://www.linkedin.com/in/abdelhakim-baalla-720120253/",
+        "github": "https://github.com/Abdelha98kim"
+      }
+    },
+
+    {
+      "linkpg":"../pages/addar_service.html",
+      "quote": "'Hello World!'",
+      "id": 3,
+      "name": "abdellah addar ",
+      "role": "Designer UI/UX",
+      "image": "../assests/images/addar-picture.jpg",
+      "imagepng": "../assests/images/addar-picture.png",
+
+      "bio": "Designer avec une approche créative et orientée utilisateur.",
+      "skills": ["Photoshop", "Illustrator", "Figma"],
+      "clientReviews": [
+        {
+          "reviewId": 102,
+          "clientName": "Rachid El Moudden",
+          "rating": 4.7,
+          "comment": "Designs élégants et bien pensés.",
+          "date": "2023-09-12"
+        }
+      ],
+      "socialMedia": {
+        "twitter": "https://twitter.com/FatimaBensouda",
+        "linkedin": "https://linkedin.com/in/FatimaZahraBensouda",
+        "github": "https://github.com/FatimaBensouda"
+      }
+    },
+    {
+      "linkpg":"../pages/ilyass_service.html",
+      "quote": "'My Code's Work, i don't Have any idea how'",
+      "id": 4,
+      "name": "ilyass Elassal",
+      "role": "Chef de projet",
+      "image": "../assests/images/ilyass-picture.jpg",
+      "imagepng": "../assests/images/ilyass-picture.png",
+
+      "bio": "Expert en gestion de projet avec un fort accent sur l'efficacité et la communication.",
+      "skills": ["Scrum", "Kanban", "Agile"],
+      "clientReviews": [
+        {
+          "reviewId": 103,
+          "clientName": "Samira Ouazzani",
+          "rating": 5.0,
+          "comment": "Très organisé et un excellent communicateur.",
+          "date": "2023-08-24"
+        }
+      ],
+      "socialMedia": {
+        "twitter": "https://twitter.com/YoussefElKhatib",
+        "linkedin": "https://linkedin.com/in/YoussefElKhatib",
+        "github": "https://github.com/YoussefElKhatib"
+      }
+    }
+  ],
+ 
+
+
+  "projects": [
+    {
+      "lien": "../pages/project1.html",
+      "image": "../assests/images/project1.jpg",
+      "title": "Site web responsive"
+    },
+    {
+      "image": "../assests/images/banque.jpg",
+      "title": "Application d'une banque"
+    },
+    {
+      "lien": "../pages/project1.html",
+      "image": "../assests/images/booking.jpg",
+      "title": "Application de booking"
+    },
+    {
+      "lien": "../pages/project1.html",
+      "image": "../assests/images/fit.jpg",
+      "title": "Application de fitness"
+    },
+    {
+      "lien": "../pages/project1.html",
+      "image": "../assests/images/Translate.jpg",
+      "title": "Application de traduction"
+    },
+    {
+      "lien": "../pages/project1.html",
+      "image": "../assests/images/elearning.jpg",
+      "title": "Platforme E-learning"
+    }
+
+  ],
+
+  "testimonials": [
+    {
+      "testimonialId": 301,
+      "clientName": "Maxime Dupont",
+      "message": "Service client impeccable et très réactif.",
+      "date": "2023-10-10",
+      "image":"../assests/images/personne.jpg"
+    },
+    {
+      "testimonialId": 302,
+      "clientName": "Isabelle Roux",
+      "message": "Expérience très agréable.",
+      "date": "2023-11-01",
+      "image": "../assests/images/personne.jpg"
+    },
+    {
+      "testimonialId": 303,
+      "clientName": "Maxime Dupont",
+      "message": "Service client impeccable et très réactif.",
+      "date": "2023-10-10",
+      "image":"../assests/images/personne.jpg"
+    },
+    {
+      "testimonialId": 304,
+      "clientName": "Maxime Dupont",
+      "message": "Service client impeccable et très réactif.",
+      "date": "2023-10-10",
+      "image":"../assests/images/personne.jpg"
+    },
+    {
+      "testimonialId": 305,
+      "clientName": "Maxime Dupont",
+      "message": "Service client impeccable et très réactif.",
+      "date": "2023-10-10",
+      "image":"../assests/images/personne.jpg"
+    }
+  ],
+
   
+  "availability": [
+    {
+      "memberId": 1,
+      "name": "Karim Amrani",
+      "availability": {
+        "monday": "9am - 5pm",
+        "tuesday": "10am - 4pm",
+        "wednesday": "9am - 5pm"
+      }
+    },
+    {
+      "memberId": 2,
+      "name": "Fatima Zahra Bensouda",
+      "availability": {
+        "monday": "11am - 3pm",
+        "tuesday": "10am - 4pm",
+        "thursday": "12pm - 6pm"
+      }
+    }
+  ],
+
+  "servicesFaison": [
+    {
+      "cardNumber" : 1,
+      "title": "UX/UI Design",
+      "caption": "Concevoir des expérience du monde réel",
+      "description": "Nous créons des designs accessibles pour sites web, applications web, plateformes e-commerce, et chatbots."
+    },
+
+    {
+      "cardNumber" : 2,
+      "title": "Back-end devlopment",
+      "caption": "Créez et maintenez les composants côté serveur de vos application web",
+      "description": "Nous incluons les API côté serveur, les opérations de base de données, etc."
+    },
+    {
+      "cardNumber" : 3,
+      "title": "Front-end devlopment",
+      "caption": "Transformer Votre design au Code magic!",
+      "description": "Nous incluons Tout les composant neccesaire pour cree une page fluid et responsive."
+    },
+
+    {
+      "cardNumber" : 4,
+      "title": "Gestion des Projects",
+      "caption": "Gerer Votre project par une methode Agile",
+      "description": "Nous Utilison Le framework ou le cadre de gestion de project Agile (SCRUM), pour aider les équipes à structurer leur travail et à le gérer."
+    }
+  ],
+
+
+  "baallaServices": [
+    {
+      "serviceId": 1,
+      "image": "../assests/images/AutoStyle.jpg",
+      "title": "Design Cars Company Website",
+      "prix": 100,
+      "description": "Je vais conventir tous votre sontiment a une belle design.",
+      "categorie": "Design De site Web"
+    },
+    {
+      "serviceId": 2,
+      "image": "../assests/images/lessonssite.jpg",
+      "title": "Complete Lessons site Web",
+      "prix": 100,
+      "description": "Je vais conventir tous votre design a une complete site web.",
+      "categorie": "Complete site web"
+    }
+  ],
+
+
+  "addarServices": [
+    {
+      "serviceId": 1,
+      "image": "../assests/images/soltek.png",
+      "title": "Technologie Website (soltek)",
+      "prix": 100,
+      "description": "Je vais conventir tous votre sontiment a une belle design.",
+      "categorie": "Design De site Web"
+    },
+    {
+      "serviceId": 2,
+      "image": "../assests/images/healthy.png",
+      "title": "Healthy Organic Food Site Web",
+      "prix": 200,
+      "description": "Je vais conventir tous votre design a une complete site web.",
+      "categorie": "complete site web"
+    }
+  ],
+
+
+  "aamirServices": [
+    {
+      "serviceId": 1,
+      "image": "../assests/images/template.png",
+      "title": "Free Templates Site Web",
+      "prix": 350,
+      "description": "Je vais conventir tous votre sontiment a une belle design.",
+      "categorie": "Design De site Web"
+    },
+    {
+      "serviceId": 2,
+      "image": "../assests/images/dashboard.png",
+      "title": "Complete Admin Dashboard site Web",
+      "prix": 780,
+      "description": "Je vais conventir tous votre design a une complete site web.",
+      "categorie": "complete site web"
+    }
+  ],
+
+
+  "ilyassServices": [
+    {
+      "serviceId": 1,
+      "image": "../assests/images/portfolio.png",
+      "title": "Portfolio Template design",
+      "prix": 340,
+      "description": "Je vais conventir tous votre sontiment a une belle design.",
+      "categorie": "Design De site Web"
+    },
+    {
+      "serviceId": 2,
+      "image": "../assests/images/huvy.png",
+      "title": "High Performance Web Application Builder",
+      "prix": 1850,
+      "description": "Je vais conventir tous votre design a une complete site web.",
+      "categorie": "complete site web"
+    }
+  ],
+
+
+  "baallaservicehead": [
+    {
+      "image": "../assests/images/Abdelhakim-picture.jpg",
+      "name": "Abdelhakim Baalla",
+      "role": "Développeur Full Stack",
+      "quote": "'Je suis Un résolveur des problèmes, avec du code'"
+    }
+  ],
+
+
+  "addarservicehead": [
+    {
+      "image": "../assests/images/addar-picture.jpg",
+      "name": "abdellah addar ",
+      "role": "Designer UI/UX",
+      "quote": "'Hello World!'"
+    }
+  ],
+
+
+  "aamirservicehead": [
+    {
+      "image": "../assests/images/aamir-picture.jpg",
+      "name": "Aamir El Amiri",
+      "role": "Développeur Web",
+      "quote": "'wake(); eat(); code(); repeat();'"
+    }
+  ],
+
+
+  "ilyassservicehead": [
+    {
+      "image": "../assests/images/ilyass-picture.jpg",
+      "name": "ilyass Elassal",
+      "role": "Chef de projet",
+      "quote": "'My Code's Work, i don't Have any idea how'"
+    }
+  ],
+
+
+  "servicepack":[
+    {
+      "title": "Standard",
+      "prix": 3000,
+      "description": "Idéal pour les entreprises avec des tâches de conception petites mais régulières chaque mois. Parfait pour maintenir un flux de travail de conception cohérent."
+    },
+    {
+      "title": "Pro",
+      "prix": 5500,
+      "description": "Idéal pour les entreprises nécessitant un travail de conception approfondi et un volume de tâches plus élevé."
+    }
+  ]
+
+}

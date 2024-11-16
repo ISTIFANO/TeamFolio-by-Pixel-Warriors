@@ -1,11 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM17SYMEb0VMZ6c1tPg9A9/gm8F0ffJ5OKHzYB4" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="../assests/css/style.css">
 </head>
 <body>
-    
+  <header class="w-full bg-blue-100">
+    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+            <a class="text-teal-600" href="#">
+                <span class="sr-only">Home</span>
+               
+                <img src="../assests/images/OIP-removebg-preview.png" class="h-12" alt="Logo">
+            </a>
+            <nav class="hidden md:flex items-center gap-6 text-sm">
+                <a class="text-gray-500 transition hover:text-gray-700" href="#">Services</a>
+                <a class="text-gray-500 transition hover:text-gray-700" href="#">Equipes</a>
+                <a class="text-gray-500 transition hover:text-gray-700" href="#">Contact Us</a>
+                <a class="text-gray-500 transition hover:text-gray-700" href="#">Projects</a>
+            </nav>
+            <div class="hidden sm:flex items-center gap-4">
+                <a class="bg-teal-600 text-white px-5 py-2 rounded-md shadow" href="#">Login</a>
+            </div>
+            <button class="block md:hidden p-2 rounded bg-gray-100 text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </div>
+  </header>
+  
+  <section class=" py-32 bg-blue-100 flex flex-col items-center w-screen text-center">
+    <h2 class="text-3xl font-semibold">Team</h2>
+    <p class="text-xl">Home &gt; Team</p>
+  </section>
+  <div id="teamCountContainer" class="p-4 font-bold"></div>
+  <div class="flex flex-col md:flex-row items-center md:items-start p-6 gap-8 max-w-4xl mx-auto" id="profileContainer" >
+  
+</div>
+<div class="flex flex-col md:flex-row gap-8 max-w-4xl mx-auto p-6 w-screen">
+  
+  <div class="flex-1">
+      <div class="grid grid-cols-2 gap-4">
+          <input type="text" placeholder="Name" class="border border-gray-300 p-2 rounded-lg w-full">
+          <input type="text" placeholder="Last Name" class="border border-gray-300 p-2 rounded-lg w-full">
+          
+          <input type="text" placeholder="Phone" class="border border-gray-300 p-2 rounded-lg w-full">
+          <input type="email" placeholder="Email" class="border border-gray-300 p-2 rounded-lg w-full">
+          <textarea placeholder="Message" class="border border-gray-300 p-2 rounded-lg w-full col-span-2 h-32"></textarea>
+      </div>
+      <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg">Envoyer</button>
+  </div>
+
+  <div class="flex-1">
+      <h3 class="text-xl font-semibold mb-4">My skills</h3>
+      
+      <div class="mb-4">
+          <div class="flex justify-between mb-1">
+              <span class="text-gray-700">UX and UI</span>
+              <span class="text-gray-500">80%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5">
+              <div class="bg-green-500 h-2.5 rounded-full" style="width: 80%;"></div>
+          </div>
+      </div>
+
+      <div class="mb-4">
+          <div class="flex justify-between mb-1">
+              <span class="text-gray-700">Development Front-end</span>
+              <span class="text-gray-500">90%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5">
+              <div class="bg-green-500 h-2.5 rounded-full" style="width: 90%;"></div>
+          </div>
+      </div>
+
+      <div class="mb-4">
+          <div class="flex justify-between mb-1">
+              <span class="text-gray-700">Development Back-end</span>
+              <span class="text-gray-500">60%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2.5">
+              <div class="bg-green-500 h-2.5 rounded-full" style="width: 60%;"></div>
+          </div>
+      </div>
+  </div>
+</div>
+<footer class="px-9">
+  <div class="footer-firstElement">
+      <div class="logo">
+          <img src="../assests/images/OIP-removebg-preview.png" alt="">
+          <h2>TeamFolio</h2>
+      </div>
+      <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Service</a></li>
+          <li><a style="padding-right: 0px;" href="">Contact</a></li>
+      </ul>
+  </div>
+  <hr>
+  <div class="footer-secondElement">
+      <div class="secondElement">
+          <div class="office footer-item">
+              <h5>OFFICE</h5>
+              <p>Germany <br>—329 Queensberry Street, <br>North Melbourne VIC 3051</p>
+          </div>
+          <div class="need-help footer-item">
+              <h5>NEED HELP</h5>
+              <p>+1 670 936 46 70<br>hello@voiture.com</p>
+          </div>
+          <div class="opening-hours footer-item">
+              <h5>OPENING HOURS</h5>
+              <p>Monday - Friday: 09:00AM - 09:00PM <br>Saturday: 09:00AM - 07:00PM <br>Sunday: Closed</p>
+          </div>
+          <div class="keep-in-touch footer-item">
+              <h5>KEEP IN TOUCH</h5>
+              <input type="email" placeholder="Enter your Email" id="email" name="email">
+              <p>Get latest updates and offers.</p>
+          </div>
+      </div>
+      <div class="thirdElement">
+          <p>ib-themes © 2023. All Rights Reserved.</p>
+          <div class="footer-thirdElement-icons">
+              <img class="footer-thirdElement-icon" src="../assests/images/image_41-removebg-preview.png" alt="">
+              <img class="footer-thirdElement-icon" src="../assests/images/image_44-removebg-preview.png" alt="">
+              <img class="footer-thirdElement-icon" src="../assests/images/image_62-removebg-preview.png" alt="">
+          </div>
+      </div>
+  </div>
+</footer>
+<script src="../src/scripts/Team_Details.js" ></script>
 </body>
 </html>
