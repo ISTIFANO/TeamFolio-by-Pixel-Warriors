@@ -1,131 +1,135 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./src/output.css" rel="stylesheet">
-  <link rel="stylesheet" href="./assests/css/style.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- <link href="./pages/" rel="stylesheet"> -->
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assests/css/style.css">
 </head>
 <body>
-  <header class="bg-white w-screen  ">
-    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-      <div class="flex h-16 items-center justify-between">
-        <div class="flex-1 md:flex md:items-center md:gap-12">
-          <a class="block text-teal-600" href="#">
-            <span class="sr-only">Home</span>
-            <img src="./assests/OIP-removebg-preview.png" class="h-48" alt="" srcset="">
-          </a>
-        </div>
-  
-        <div class="md:flex md:items-center md:gap-12">
-          <nav aria-label="Global" class="hidden md:block">
-            <ul class="flex items-center gap-6 text-sm">
-              <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Services </a>
-              </li>
-  
-              <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Equipes </a>
-              </li>
-  
-              <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Contact us  </a>
-              </li>
-  
-              <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Projects </a>
-              </li> 
-  
-
-            </ul>
-          </nav>
-  
-          <div class="flex items-center gap-4">
-            <div class="sm:flex sm:gap-4">
-              <a
-                class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
-                href="#"
-              >
-                Login
-              </a>
-  
-              <div class="hidden sm:flex">
-                <a
-                  class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
-                  href="#"
-                >
-                  Register
+    <!--Navbar -->
+    <header class="w-full bg-[#57CC99]">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <a class="text-teal-600" href="#">
+                    <span class="sr-only">Home</span>
+                    <img src="../assests/images/OIP-removebg-preview.png" class="h-12" alt="Logo">
                 </a>
-              </div>
-            </div>
-  
-            <div class="block md:hidden">
-              <button class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="size-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <footer>
-    <div class="footer-firstElement">
-        <div class="logo">
-            <img src="../Gestion/assets/icons/ICON.png" alt="">
-            <h2>Voiture</h2>
-        </div>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Service</a></li>
-            <li><a style="padding-right: 0px;" href="">Contact</a></li>
-        </ul>
-    </div>
-    <hr>
-    <div class="footer-secondElement">
-        <div class="secondElement">
-            <div class="office footer-item">
-                <h5>OFFICE</h5>
-                <p>Germany <br>—329 Queensberry Street, <br>North Melbourne VIC 3051</p>
-            </div>
-            <div class="need-help footer-item">
-                <h5>NEED HELP</h5>
-                <p>+1 670 936 46 70<br>hello@voiture.com</p>
-            </div>
-            <div class="opening-hours footer-item">
-                <h5>OPENING HOURS</h5>
-                <p>Monday - Friday: 09:00AM - 09:00PM <br>Saturday: 09:00AM - 07:00PM <br>Sunday: Closed</p>
-            </div>
-            <div class="keep-in-touch footer-item">
-                <h5>KEEP IN TOUCH</h5>
-                <input type="email" placeholder="Enter your Email" id="email" name="email">
-                <p>Get latest updates and offers.</p>
+                <nav class="hidden md:flex items-center gap-6 text-sm">
+                    <a class="text-gray-500 transition hover:text-gray-700" href="#main">Services</a>
+                    <a class="text-gray-500 transition hover:text-gray-700" href="pages/Team.html" target="_blank">Equipes</a>
+                    <a class="text-gray-500 transition hover:text-gray-700" href="pages/contact.html" target="_blank">Contact Us</a>
+                    <a class="text-gray-500 transition hover:text-gray-700" href="pages/project.html" target="_blank">Projects</a>
+                </nav>
+                <div class="hidden sm:flex items-center gap-4">
+                    <a class="bg-teal-600 text-white px-5 py-2 rounded-md shadow" href="#">Login</a>
+                </div>
+                <button class="block md:hidden p-2 rounded bg-gray-100 text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
             </div>
         </div>
-        <div class="thirdElement">
-            <p>ib-themes © 2023. All Rights Reserved.</p>
-            <div class="footer-thirdElement-icons">
-                <img class="footer-thirdElement-icon" src="../Gestion/assets/icons/Facebook Blanc.png" alt="">
-                <img class="footer-thirdElement-icon" src="../Gestion/assets/icons/Insta Blanc.png" alt="">
-                <img class="footer-thirdElement-icon" src="../Gestion/assets/icons/Twitter Blanc.png" alt="">
-                <img class="footer-thirdElement-icon" src="../Gestion/assets/icons/Linked in Blanc.png" alt="">
+    </header>
+    <!--main section -->
+    <main id="main">
+        
+        <section id="all-que-faison-nous" class="bg-[#C7F9CC] font-[poppins] ">
+            <h1 class="font-medium pt-10 text-center text-2xl">Que faisons-nous?</h1>
+            <div id="service-gl-crd">
+                <div class="flex flex-wrap gap-5 justify-center mt-5" id="glb-servc">
+                    <!--import data from json -->
+                </div>
+            </div>
+            <div class="flex justify-center p-8 pb-3">
+                <a href="pages/Team.html" target="_blank"><button class="border bg-[#38A3A5] pt-2 pb-2 pl-6 pr-6 rounded-xl text-sm font-light">Discovrer</button></a>
+            </div>
+        </section>
+
+        <h1 id="notre-team-header" class="font-semibold text-2xl text-center pt-7 bg-[#f2f3f5] pb-7">Notre Team</h1>
+        <section class="flex flex-wrap justify-center items-center gap-2 bg-[#f2f3f5] pb-8" id="notre-team">
+        
+    </section>
+        <!-- <section id="all-notre-team" class="bg-[#F5E7DC]">
+            <h1 id="notre-team-header" class="font-semibold text-2xl text-center pt-7 bg-white pb-7">Notre Team</h1>
+            <div id="members-pictures" class="flex gap-4 justify-center p-4">
+                <figure><img src="../assests/images/Abdelhakim-picture.jpg" alt="Abdelhakim Baalla" width="93px" class="rounded-tl-xl rounded-br-xl"></figure>
+                <figure><img src="../assests/images/addar-picture.jpg" alt="Abdellah addar" class="rounded-tl-xl rounded-br-xl"></figure>
+                <figure><img src="../assests/images/aamir-picture.jpg" alt="aamir el amiri" class="rounded-tl-xl rounded-br-xl"></figure>
+                <figure><img src="../assests/images/ilyass-picture.jpg" alt="ilyass el assal" class="rounded-tl-xl rounded-br-xl"></figure>
+            </div>
+        </section> -->
+        <section id="all-les-technologies-utilise" class="bg-[#C7F8CC] h-96 flex flex-col justify-center">
+            <h1 class="font-semibold text-center pt-2 text-2xl">Les Technologies Que nous Utilisons</h1>
+            <div>
+                <div class="flex gap-5 justify-center mt-8 flex-wrap">
+                    <img src="assests/images/html.png" alt="" class="w-20">
+                    <img src="assests/images/css.png" alt="" class="w-20">
+                    <img src="assests/images/javascript.png" alt="" class="w-20">
+                </div>
+                <div class="flex gap-5 justify-center mt-8 flex-wrap">
+                    <img src="assests/images/java.png" alt="" class="w-20">
+                    <img src="assests/images/php.png" alt="" class="w-20">
+                    <img src="assests/images/Tailwind.png" alt="" class="w-20">
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <!--Footer -->
+    <footer>
+        <div class="footer-firstElement">
+            <div class="logo">
+                <img src="assests/images/OIP-removebg-preview.png" alt="Logo">
+                <h2>DevConnect</h2>
+            </div>
+            <ul>
+                <li><a href="">Services</a></li>
+                <li><a href="">Equipes</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a style="padding-right: 0px;" href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="footer-secondElement">
+            <div class="secondElement">
+                <div class="office footer-item">
+                    <h5>OFFICE</h5>
+                    <p>Youcode,Maroc 132, hay-al-code</p>
+                </div>
+                <div class="need-help footer-item">
+                    <h5>NEED HELP</h5>
+                    <p>+1 670 936 46 70<br>support.devconnect@gmail.com</p>
+                </div>
+                <div class="opening-hours footer-item">
+                    <h5>OPENING HOURS</h5>
+                    <p>Monday - Friday: 09:00AM - 09:00PM <br>Saturday: 09:00AM - 07:00PM <br>Sunday: Closed</p>
+                </div>
+                <div class="keep-in-touch footer-item">
+                    <h5>KEEP IN TOUCH</h5>
+                    <input type="email" placeholder="Enter your Email" id="email" name="email">
+                    <p>Get latest updates and offers.</p>
+                </div>
+            </div>
+            <div class="thirdElement">
+                <p>DevConnect © 2024. All Rights Reserved.</p>
+                <div class="footer-thirdElement-icons">
+                    <img class="footer-thirdElement-icon" src="assests/images/facebook.png" alt="">
+                    <img class="footer-thirdElement-icon" src="assests/images/youtube.png" alt="">
+                    <img class="footer-thirdElement-icon" src="assests/images/instagram.png" alt="">
+                    <img class="footer-thirdElement-icon" src="assests/images/linkedin.png" alt="">
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
+
+    <!--JavaScript File -->
+    <script src="src/scripts/service_home.js"></script>
 </body>
 </html>
